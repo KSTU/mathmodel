@@ -1,0 +1,96 @@
+% Этот шаблон документа разработан в 2014 году
+% Данилом Фёдоровых (danil@fedorovykh.ru) 
+% для использования в курсе 
+% <<Документы и презентации в \LaTeX>>, записанном НИУ ВШЭ
+% для Coursera.org: http://coursera.org/course/latex .
+% Исходная версия шаблона --- 
+% https://www.writelatex.com/coursera/latex/3.1
+
+\documentclass[a5paper,12pt]{article}
+\usepackage[left=1.5cm, top=1cm, right=1cm, bottom=20mm]{geometry}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% ло кализация и переносы
+%%\usepackage{textcomp}
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%% Номера формул
+\usepackage{xymtexpdf}
+\usepackage{chmst-pdf}
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%
+\newcommand*{\goal} {Цель работы: }
+\newcommand{\myfun}[1]{#1}
+
+%%% Работа с картинками
+\usepackage{graphicx}  % Для вставки рисунков
+\usepackage{rotating}
+\graphicspath{{fig/}{images2/}}  % папки с картинками
+\setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+\usepackage{wrapfig} % Обтекание рисунков текстом
+
+%%% Работа с таблицами
+\usepackage{array,tabularx,tabulary,booktabs} % Дополнительная работа с таблицами
+\usepackage{longtable}  % Длинные таблицы
+\usepackage{multirow} % Слияние строк в таблице
+
+
+%%% Программирование
+\usepackage{etoolbox} % логические операторы
+\textwidth=117 mm
+
+%%%tikz
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns}
+
+%\usepackage{mathptmx}
+%\usepackage{times}
+%\usepackage{courier}
+%\usepackage{mathptmx}
+\usepackage{indentfirst} % Красная строка
+
+%\newcommand*{\myfont}{\fontfamily{tgadventor}\selectfont}
+%\DeclareTextFontCommand{\mc}{\myfont}
+\newcommand{\mc}[1] {\ttfamily{#1}\rmfamily}
+\newcommand{\laborator} [1] {\newpage\addtocounter{nlab}{1}\addcontentsline{toc}{section}{Лабораторная работа №\arabic{nlab} #1} \textbf{Лабораторная работа №\arabic{nlab} #1}}
+
+\usepackage{enumitem}
+
+%%% Заголовок
+\author{Ivan Anashkin}
+\title{Методическое указание}
+\date{\today}
+
+\begin{document}
+
+\input{title.tex}
+\newcounter{nlab}
+%\input{introduction.tex}
+\input{matcad.tex}
+\input{regress.tex}
+\input{diffeq.tex}
+\input{program.tex}
+\input{phase.tex}
+%Вставление кусков
+%\input{mass_transfer.tex}
+\input{heat_transfer.tex}
+\input{reaction.tex}
+\input{rectification.tex}
+
+\addcontentsline{toc}{section}{\bibname}
+\bibliographystyle{utf8gost71u}  
+\bibliography{lib.bib}
+\end{document}
