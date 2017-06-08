@@ -6,7 +6,7 @@
 % Исходная версия шаблона --- 
 % https://www.writelatex.com/coursera/latex/3.1
 
-\documentclass[a5paper,12pt]{article}
+\documentclass[a5paper,12pt]{report}
 \usepackage[left=1.5cm, top=1cm, right=1cm, bottom=20mm]{geometry}
 
 %%% Работа с русским языком
@@ -19,6 +19,8 @@
 
 %%% Дополнительная работа с математикой
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+%\usepackage{textcomp}
+
 \usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
 
 %% Номера формул
@@ -55,6 +57,7 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{patterns}
+\usetikzlibrary{shadows}
 
 %\usepackage{mathptmx}
 %\usepackage{times}
@@ -64,10 +67,43 @@
 
 %\newcommand*{\myfont}{\fontfamily{tgadventor}\selectfont}
 %\DeclareTextFontCommand{\mc}{\myfont}
-\newcommand{\mc}[1] {\ttfamily{#1}\rmfamily}
-\newcommand{\laborator} [1] {\newpage\addtocounter{nlab}{1}\addcontentsline{toc}{section}{Лабораторная работа №\arabic{nlab} #1} \textbf{Лабораторная работа №\arabic{nlab} #1}}
 
+%counters
+\newcounter{nlab}
+\newcounter{zadacha.count}
+\newcounter{primer.count}
+
+%my commands
+\allowdisplaybreaks
+
+\newcommand{\mc}[1] {\ttfamily{#1}\rmfamily}
+\newcommand{\zd}{ \addtocounter{zadacha.count}{1} Вариант \arabic{zadacha}  }
+\newcommand{\primer}[1] {
+	\addtocounter{primer.count}{1} Пример задания \arabic{primer.count}: #1
+	}
+\newcommand{\resh}{Вариант решения: }
+
+\newcommand{\laborator} [1] {\newpage\addtocounter{nlab}{1}\addcontentsline{toc}{section}{Лабораторная работа №\arabic{nlab} #1}  \textbf{Лабораторная работа № \arabic{nlab} #1}
+\setcounter{equation}{0}
+\setcounter{figure}{0}
+\setcounter{primer.count}{0}
+\setcounter{zadacha.count}{0}
+}
+
+%для клавишь
+\graphicspath{{./figures/rect/}{./figures/abs/}{./figures/old/mathcad/}}
+
+\usepackage[os=win, mackeys=symbols]{menukeys}
 \usepackage{enumitem}
+
+\usepackage[russian,noabbrev]{cleveref}
+%\newcommand{\crefrangeconjunction}{ -- }
+%\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.} % Сквозная нумерация
+%\numberwithin{equation}{nlab}
+\renewcommand{\theequation}{\arabic{nlab}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{nlab}.\arabic{figure}}
+\usepackage[mathx]{mathabx}
+\usepackage{xstring}
 
 %%% Заголовок
 \author{Ivan Anashkin}
@@ -77,15 +113,27 @@
 \begin{document}
 
 \input{title.tex}
-\newcounter{nlab}
-%\input{introduction.tex}
-\input{matcad.tex}
-\input{regress.tex}
-\input{diffeq.tex}
-\input{program.tex}
-\input{phase.tex}
+\input{introduction.tex}
 %Вставление кусков
-%\input{mass_transfer.tex}
+
+%mathcad
+\IfStrEqCase{old}{{old}{
+		\input{old/matcad.tex}
+		\input{old/regress.tex}
+		\input{old/diffeq.tex}
+		\input{old/program.tex}
+		}
+	{new}{now this is b}
+	{octave}{\input{octave/octave_base.tex}}}
+
+
+%
+
+%octave
+\input{phase.tex}
+\input{equation.tex}
+
+\input{mass_transfer.tex}
 \input{heat_transfer.tex}
 \input{reaction.tex}
 \input{rectification.tex}
