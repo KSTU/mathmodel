@@ -47,8 +47,16 @@ function z1(id)
 endfunction
 
 %main program
+arg_list=argv();
+if(length(arg_list)<2)
+	%if((arg_list(1)==null)||(arg_list(2)==null))
+		fprintf("Error. Usege: octave regression.m group_number variant_number\n");
+		break
+	%endif
+endif
 file_id=fopen("reaction.tex","w");
-for ii=1:30
+fprintf(file_id,"\\textsc{\\textbf{Лабораторная работа №9}}\n\n",Gnum)
+for ii=1:str2num(arg_list{2})
 	fprintf(file_id,"\\textsc{\\textbf{Вариант %d}}\n\n",ii)
 	z1(file_id)
 endfor

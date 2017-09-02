@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{(#1)}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{klinov-mm2009}
+\selectlanguageifdefined{russian}
+Клинов~А.В.~Мухаметзянова~А.Г.
+  Математическое моделирование
+  химико-технологических процессов:
+  учебное пособие~/ {под ред. }Изд-во Казан.
+  гос.~технол.~ун-та.
+\newblock Казань, 2009.{}
+
+\bibitem{shipachevvs2005}
+\selectlanguageifdefined{russian}
+В.С~Шипачев. Основы высшей математики~/ {под
+  ред. }"Высшая~школа".
+\newblock 7 {изд.}
+\newblock М, 2005.
+\newblock {С.}~479.{}
+
+\bibitem{yelles1989}
+\selectlanguageifdefined{russian}
+Уелес~С. Фазовые равновесия в химической
+  технологии: В 2-х ч.
+\newblock М. Мир, 1989.{}
+
+\bibitem{rid1982}
+\selectlanguageifdefined{russian}
+Рид~Р.~Праусниц~Т.~Шервуд~Т. Свойства газов и
+  жидкостей: Справочное пособие.
+\newblock Химия, 1982.{}
+
+\end{thebibliography}

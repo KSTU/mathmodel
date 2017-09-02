@@ -28,9 +28,7 @@ function z2(id)
 	iteg_z=["\\int \\sin(7x)"
 	"\\int \\cos(x^2)"
 	"\\int \\dfrac{x^4+1}{x^2}"];
-	diff_z=[ "{\\dfrac{sin(5 x +3)}{x}}"
-	"\\dfrac{7+x}{x^2}"
-	"\\dfrac{3}{2}"
+	diff_z=[ "{\\dfrac{\\partial \\sin(5 x +3)}{\\partial x}}"
 	];
 	int_num=rows(iteg_z);
 	diff_num=rows(diff_z);
@@ -48,7 +46,7 @@ function z4(id)
 	"y(x)=\dfrac{x+4}{x^2+1}"
 	"y(x)=x^3+4 \\sqrt(x)"
 	"y(x)=x"
-	"y(x)=\\sqrt(x)"];
+	"y(x)=\\sqrt(x)"];4
 
 	func2=["z(x)=10-x^2"
 	"z(x)=\ln(x^2+1)"

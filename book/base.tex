@@ -6,8 +6,11 @@
 % Исходная версия шаблона --- 
 % https://www.writelatex.com/coursera/latex/3.1
 
-\documentclass[a5paper,12pt]{report}
+\documentclass[a5paper,11pt]{report}
+%\usepackage[print,twouparticle]{booklet}
+%\usepackage{lscape}
 \usepackage[left=1.5cm, top=1cm, right=1cm, bottom=20mm]{geometry}
+
 
 %%% Работа с русским языком
 \usepackage{cmap}					% поиск в PDF
@@ -42,6 +45,8 @@
 \setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
 \setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
 \usepackage{wrapfig} % Обтекание рисунков текстом
+\usepackage{float}
+
 
 %%% Работа с таблицами
 \usepackage{array,tabularx,tabulary,booktabs} % Дополнительная работа с таблицами
@@ -104,6 +109,7 @@
 \renewcommand{\thefigure}{\arabic{nlab}.\arabic{figure}}
 \usepackage[mathx]{mathabx}
 \usepackage{xstring}
+
 
 %%% Заголовок
 \author{Ivan Anashkin}

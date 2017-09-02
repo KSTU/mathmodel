@@ -268,11 +268,17 @@ endfunction
 
 #main programm
 pkg load all
-Gnum=1
-var_num=20
+arg_list=argv();
+if(length(arg_list)<2)
+	%if((arg_list(1)==null)||(arg_list(2)==null))
+		fprintf("Error. Usege: octave regression.m group_number variant_number\n");
+		break
+	%endif
+endif
+
 file_id=fopen("diffeq.tex","w");
-fprintf(file_id,"\\textsc{\\textbf{Лабораторная работа №3}}\n\n",Gnum)
-for ii=1:var_num
+fprintf(file_id,"\\textsc{\\textbf{Лабораторная работа <<Решение дифференциальных уравнений>>}}\n\n")
+for ii=1:str2num(arg_list{2})
 	fprintf(file_id,"\\textsc{\\textbf{Вариант %d}}\n",ii)
 	fprintf(file_id,"\\begin{enumerate}\n");
 	z1(file_id);
