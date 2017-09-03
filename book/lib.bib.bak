@@ -1,0 +1,38 @@
+% This file was created with JabRef 2.10.
+% Encoding: UTF-8
+
+
+@Book{klinov-mm2009,
+  Title                    = {Математическое моделирование химико-технологических процессов: учебное пособие},
+  Author                   = {Клинов А.В., Мухаметзянова А.Г.},
+  Editor                   = {Изд-во Казан. гос. технол. ун-та},
+  Publisher                = {Казань},
+  Year                     = {2009},
+
+  Owner                    = {manyak},
+  Timestamp                = {2017.02.01}
+}
+
+@Book{rid1982,
+  Title                    = {Свойства газов и жидкостей: Справочное пособие},
+  Author                   = {Рид Р., Праусниц Т., Шервуд Т.},
+  Publisher                = {Химия},
+  Year                     = {1982},
+
+  Owner                    = {manyak},
+  Timestamp                = {2017.02.01}
+}
+
+@Book{shipachevvs2005,
+  Title                    = {Основы высшей математики},
+  Author                   = {Шипачев В.С,},
+  Editor                   = {"Высшая школа"},
+  Publisher                = {М},
+  Year                     = {2005},
+  Edition                  = {7},
+
+  Owner                    = {manyak},
+  Pages                    = {479},
+  Timestamp                = {2016.12.28}
+}
+
