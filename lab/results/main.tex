@@ -1,0 +1,82 @@
+
+\documentclass[a4paper,12pt]{article}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={175mm,257mm},
+	left=20mm,
+	top=20mm,
+}
+
+
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+\usepackage{cutwin}
+%% Номера формул
+%\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+%\usepackage{leqno} % Нумерация формул слева
+
+%% Свои команды
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%%% Работа с картинками
+\usepackage{graphicx}  % Для вставки рисунков
+%\graphicspath{{images/}{images2/}}  % папки с картинками
+\setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+\usepackage{wrapfig} % Обтекание рисунков текстом
+
+%%% Работа с таблицами
+\usepackage{array,tabularx,tabulary,booktabs} % Дополнительная работа с таблицами
+\usepackage{longtable}  % Длинные таблицы
+\usepackage{multirow} % Слияние строк в таблице
+
+%%% Теоремы
+\theoremstyle{plain} % Это стиль по умолчанию, его можно не переопределять.
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem{proposition}[theorem]{Утверждение}
+ 
+\theoremstyle{definition} % "Определение"
+\newtheorem{corollary}{Следствие}[theorem]
+\newtheorem{problem}{Задача}[section]
+ 
+\theoremstyle{remark} % "Примечание"
+\newtheorem*{nonum}{Решение}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{Лабораторная работа № \arabic{nlab}}	%\rightmark
+\fancyhead[L]{\input{number.tex}}
+\fancyhead[C]{}
+\setcounter{secnumdepth}{0}
+
+\newcounter{nlab}
+\setcounter{nlab}{0}
+%\renewcommand{\subsectionmark}[1]{\markright{#1}}
+
+%%% Программирование
+\usepackage{etoolbox} % логические операторы
+
+%%% Заголовок
+%\author{\LaTeX{} в Вышке}
+%\title{Модели для описания селективности зависящей от толщины мембраны}
+%\date{\today}
+
+\begin{document}
+\input{title.tex}
+\input{filelist.tex}
+\end{document}
