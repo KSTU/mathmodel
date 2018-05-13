@@ -1,3 +1,6 @@
+# ww
+printf("generate lab #3\n")
+
 function out=z1(id)
 	ode=["\\dfrac{dy}{dx}=x sin(x)";
 	"\\dfrac{dy}{y}=\\dfrac{dx}{x-1}";
@@ -34,7 +37,7 @@ function out=z1(id)
 	a=ceil(rand()*9);
 	ya=ceil(rand()*5);
 	b=a+1+ceil(rand()*9);
-	fprintf(id,"\\item (1 балл) Решить численно дифференциальное уравнение $%s$ с начальными значениями $y(%6.0f)=%6.0f$ на интервале от $x=%6.0f$ до $x=%6.0f$. Построить график функции.",ode(eq_n,:),a,ya,a,b);
+	fprintf(id,"\\item Решить численно дифференциальное уравнение $%s$ с начальными значениями $y(%6.0f)=%6.0f$ на интервале от $x=%6.0f$ до $x=%6.0f$. Построить график функции.",ode(eq_n,:),a,ya,a,b);
 endfunction
 
 function out=z2(id)
@@ -77,7 +80,7 @@ function out=z2(id)
 	ya=(rand()*5);
 	b=a+1+ceil(rand()*9);
 	za=(rand()*5);
-	fprintf(id,"\\item (1 балл) Решить численно систему дифференциальных уравнений:\n \\begin{equation*}\n");
+	fprintf(id,"\\item Решить численно систему дифференциальных уравнений:\n \\begin{equation*}\n");
 		fprintf(id,"\\left\\\{\n");
 		fprintf(id,"\\begin{gathered}\n")
 		fprintf(id,"%s\\\\\n",eq_list1(eq_n1,:));
@@ -144,10 +147,10 @@ function out=eq_sys(x,f,varargin)
 endfunction
 
 function out=z3(id)
-	
+
 	neq1=ceil(rand()*fun_id(1,1,1,1).fnum);
 	neq2=ceil(rand()*fun_id(1,1,1,1).fnum);
-	
+
 	while(neq1==neq2)
 		neq2=ceil(rand()*fun_id(1,1,1,1).fnum);
 	endwhile
@@ -155,8 +158,8 @@ function out=z3(id)
 	ya=(rand()*5);
 	b=a+1+ceil(rand()*9);
 	za=(rand()*5);
-	
-	fprintf(id,"\\item (1 балл) Решить численно систему дифференциальных уравнений:\n \\begin{equation*}\n");
+
+	fprintf(id,"\\item Решить численно систему дифференциальных уравнений:\n \\begin{equation*}\n");
 		fprintf(id,"\\left\\\{\n");
 		fprintf(id,"\\begin{gathered}\n")
 		fprintf(id,"\\dfrac{dy}{dx}=%s\\\\\n",fun_id(1,1,1,neq1).n);
@@ -171,7 +174,7 @@ endfunction
 
 function out=z4(id)
 	nz=ceil(rand()*6);
-	fprintf(id,"\\item (1 балл) ");
+	fprintf(id,"\\item ");
 	if(nz==1)
 		Vsos=10+rand()*20;
 		ras=2+rand()*5;
@@ -220,13 +223,13 @@ endfunction
 
 function out=z5(id)
 	nz=ceil(rand()*5);
-	fprintf(id,"\\item (1 балл)");
+	fprintf(id,"\\item ");
 	if(nz==1)
 		V1=80+rand()*50;
 		V2=80+rand()*50;
 		sol=10+20*rand();
 		ras=4+rand()*4;
-		
+
 		fprintf(id," В баке находится %4.0f л раствора, содержащего %2.1f кг соли. В бак втекает %2.1f л воды в минуту, моментально перемешивается во всем объеме бака а избыток воды переливается в другой %3.1f литровый бак, первоначально заполненный чистой водой. Избыток жидкости из него выливается. Записать систему дифференциальных уравнений, описывающих изменение массы соли в баках, построить зависимости изменения массы соли в баках. Определить когда во втором баке будет максимальная масса соли.\n\n ",V1,sol,ras,V2)
 	endif
 	if(nz==2)
@@ -235,7 +238,7 @@ function out=z5(id)
 		h=30+100*rand();
 		ras=1+2*rand();
 		S=1+3*rand();
-		
+
 		fprintf(id," В прямоугольный бак сечением %3.1f см x %3.1f и высотой %3.1f см поступает %3.1f л в секунду. На дне имеется отверстие площадью %3.1fсм. За какое время наполнится бак? Записать  дифференциальное уравнение изменения уровня жидкости (или объема воды в баке) от времени, построить график. Сравнить результат с временем заполнения этого бака без отверстия.\n\n ",a,b,h,ras,S)
 	endif
 	if(nz==3)
@@ -266,8 +269,37 @@ function out=z5(id)
 	endif
 endfunction
 
+function z6(id)
+func_list=["\\upsilon=x^2",
+"\\upsilon=\\tau^2",
+"\\upsilon=\\tau+x",
+"\\upsilon=\\dfrac{x}{3}",
+"\\upsilon=\\dfrac{3}{3+x}",
+"\\upsilon=\\dfrac{x+\\tau}{4}",
+"\\upsilon=\\sqrt{\\tau}",
+"\\upsilon=\\sqrt{\\tau+x}",
+"\\upsilon=\\cos(\\tau)+\\sin(x)"
+]
+vop=[" Определить координаты тела через "
+"Определить за какое время тело переместиться на "]
+vop2=[" c.",
+" м."]
+f_num=rows(func_list)
+f_rand=round(rand()*(f_num-1))+1
+
+fprintf(id,"\\item ")
+
+v0=0.1+5*rand()
+vof=300+700*rand()
+f2_rand=round(rand()*1.0)+1
+
+fprintf(id,"Тело движется прямолинейно и его скорость изменяется по выражению $%s$. Начальная скорость равна $\\upsilon=%3.2f \\frac{м}{с}.$ %s $%4.2f$ %s ",func_list(f_rand,:),v0,vop(f2_rand,:),vof,vop2(f2_rand,:))
+endfunction
+
+
 #main programm
-pkg load all
+pkg load odepkg
+pkg load io
 arg_list=argv();
 if(length(arg_list)<2)
 	%if((arg_list(1)==null)||(arg_list(2)==null))
@@ -276,8 +308,11 @@ if(length(arg_list)<2)
 	%endif
 endif
 
+cd results
 file_id=fopen("diffeq.tex","w");
-fprintf(file_id,"\\textsc{\\textbf{Лабораторная работа <<Решение дифференциальных уравнений>>}}\n\n")
+fprintf(file_id,"\\section{Лабораторная работа №~3 <<Решение дифференциальных уравнений>>}\n\n \\addtocounter{nlab}{1}")
+#fprintf(file_id,"\\textsc{\\textbf{Группа %s}}\n\n",arg_list{1})
+
 for ii=1:str2num(arg_list{2})
 	fprintf(file_id,"\\textsc{\\textbf{Вариант %d}}\n",ii)
 	fprintf(file_id,"\\begin{enumerate}\n");
@@ -285,9 +320,16 @@ for ii=1:str2num(arg_list{2})
 	z2(file_id);
 	z3(file_id);
 	z4(file_id);
-	%z4(file_id);
+	z5(file_id);
+#	z6(file_id);
 	fprintf(file_id,"\\end{enumerate}\n");
 	#fprintf(file_id,"\\newpage\n")
 	printf("generated %d \n",ii)
 endfor
+fprintf(file_id,"\\newpage\n")
 fclose(file_id);
+
+
+file_id=fopen("filelist.tex","a")
+fprintf(file_id,"\n\\input{diffeq.tex}")
+fclose(file_id)

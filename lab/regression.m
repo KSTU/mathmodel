@@ -1,17 +1,26 @@
 %
+printf("generate lab #2")
+
 function z1(id)
-	fprintf(id,"\\item ");
+	fprintf(id,"\\textbf{Задание 1} ");
 	fun_list=["y(x)=a e^{b x}+c"; "y(x)=a \\cdot x^b+c"];
 
 	ai=["a_0","a_1"];
 	fun2_list=["x"; "x^{3.7}"; "\\dfrac{1}{x}"; "x^{1.2}"; "x^{0.3}"; "\\dfrac{x}{1+x}"; "\\dfrac{x^{2.4}}{1+x^2}"; "\\sqrt{x}"];
-	fun3_list=["y(x)=A \\cdot e^{-\\dfrac{B}{x}+C}"; "y(x)=\\dfrac{B+x^C}{A+x}"; "y(x)=B+10^{A+Cx}"; "y(x)=\\dfrac{A x^2 + B x +C}{\\sqrt{x} +D}"];
+	fun3_list=["y(x)=A \\cdot e^{-\\dfrac{B}{x}+C}"; "y(x)=\\dfrac{B+x^C}{A+x}"; "y(x)=B+10^{A+Cx}"; "y(x)=\\dfrac{A x^2 + B x +C}{\\sqrt{x} +D}"; "y(x)=\\dfrac{A x^B} {C+x}"];
+	fun4_list=["кубический\\ сплайн"; "параболический\\ сплайн"]
 	A=normrnd(0.2,5);
 	B=normrnd(1,5);
 	C=normrnd(2,5);
 	D=normrnd(4,5);
-	
-	fprintf(id,"В результате измерения зависимости переменной состояния $y$ от входного фактора $x$ были получены значения, представленные в таблице. Описать табличные данные следующими функциональными зависимостями:\n \\begin{itemize} \n")
+
+
+	xmin=ceil(rand()*100)/10;
+	xdel=ceil(rand()*100)/10;
+
+
+%=====================
+fprintf(id,"В результате измерения зависимости переменной состояния $y$ от входного фактора $x$ были получены значения, представленные в таблице. Описать табличные данные следующими функциональными зависимостями:\n \\begin{itemize} \n")
 	fprintf(id,"\\item $y(x)=a x+b$\n")
 	if(rand()>0.5)
 		fprintf(id,"\\item $y(x)=a_3 x^3 +a_2 x^2 + a_1 x +a_0$\n");
@@ -25,7 +34,7 @@ function z1(id)
 #	endwhile
 	fprintf(id,"\\item $%s$\n",fun_list(1,:));
 	fprintf(id,"\\item $%s$\n",fun_list(2,:));
-	fun2_num=8-0.0001;
+	fun2_num=rows(fun2_list);
 	temp1=ceil(rand()*fun2_num);
 	temp2=ceil(rand()*fun2_num);
 	temp3=ceil(rand()*fun2_num);
@@ -36,19 +45,22 @@ function z1(id)
 		temp3=ceil(rand()*fun2_num);
 	endwhile
 	fprintf(id,"\\item $y(x)=a_0 %s+a_1 %s +a_2 %s$",fun2_list(temp1,:),fun2_list(temp2,:),fun2_list(temp3,:));
-	fun3_num=3;
+	fun3_num=rows(fun3_list);
 	temp1=ceil(rand()*fun3_num);
 	fprintf(id,"\\item $%s$",fun3_list(temp1,:));
-	
+
+	fun4_num=rows(fun4_list);
+	temp4=ceil(rand()*fun4_num);
+
+	fprintf(id,"\\item $%s$",fun4_list(temp4,:));
 	fprintf(id,"\\end{itemize}\n")
-	xmin=ceil(rand()*100)/10
-	xdel=ceil(rand()*100)/10
+%%%%%%%%%%%5
 
 	#таблица исходных данных
-	fprintf(id,"\\begin{table}[h]\n");
+	fprintf(id,"\\begin{table}[h]\n");	%\\begin{wraptable}{r}{0.15\\linewidth}\n
 	fprintf(id,"\\begin{tabular}{|c|c|}\n\\hline\n");
 	fprintf(id,"x & y \\\\ \\hline\n")
-	
+
 	func_num=3;
 	func_cur= ceil(rand()*func_num)
 	#if(func_cur==1)
@@ -61,13 +73,13 @@ function z1(id)
 				cur_y(ii)=B*cur_x(ii)^(B)-C/cur_x(ii)^abs(C);
 			endif
 			if(func_cur==3)
-				cur_y(ii)=(A*cur_x(ii)^2+B*cur_x(ii)+C)/(sqrt(cur_x(ii))+D/10)
+				cur_y(ii)=(A*cur_x(ii)^2+B*cur_x(ii)+C)/(sqrt(cur_x(ii))+D/10);
 			endif
-			
+
 		endfor
 		E=max(cur_y)+rand()*100;
 		if(max(abs(cur_y))>10000)
-			koef=10000/max(abs(cur_y))*normrnd(1,0.1)
+			koef=10000/max(abs(cur_y))*normrnd(1,0.1);
 		elseif(max(abs(cur_y))<5)
 			koef=5000;
 		else
@@ -79,6 +91,8 @@ function z1(id)
 	#endif
 	fprintf(id,"\\end{tabular}\n")
 	fprintf(id,"\\end{table}\n\n")
+
+
 endfunction
 
 function z2(id)
@@ -212,7 +226,7 @@ function z3(id)
 		fprintf(id,"%5.2f y = %5.2f x^2\\\\\n",A,B);
 		fprintf(id,"%5.2f x^2 + %5.2f y^2 = %6.2f\n",abs(A1),abs(B1),abs(E1)*100)
 	endif
-	if(temp1==5)	#круг и 
+	if(temp1==5)	#круг и
 		fprintf(id,"x^2 + %5.2f y^2 %5.2f = %10.2f ",abs(A),bz,abs(B),abs(C)*1000);
 		fprintf(id,"y^2= %6.2f x^{%3.2f}",B,1/3*normrnd(1,0.4))
 	endif
@@ -222,33 +236,57 @@ function z3(id)
 endfunction
 
 function z4(id)
-	temp=readdir(pwd);
-	file_num=numel(temp)-2;
-	for ii=1:file_num
-		file_list{ii}=temp{ii+2};
+	num=odsread('lab2.ods', 'z2', 'A1:A1','OCT');
+	num
+	vvo_range=strcat('A2:A',num2str(num+1));
+	[numarr, vvo, rawarr, limits]=odsread('lab2.ods', 'z2', vvo_range,'OCT');
+	prop_range=strcat('B2:B',num2str(num+1));
+	[numarr, prop, rawarr, limits]=odsread('lab2.ods', 'z2', prop_range,'OCT');
+	max_range=strcat('C2:C',num2str(num+1));
+	[maxr, temps, rawarr, limits]=odsread('lab2.ods', 'z2', max_range,'OCT');
+	min_range=strcat('D2:D',num2str(num+1));
+	[minr, temps, rawarr, limits]=odsread('lab2.ods', 'z2', min_range,'OCT');
+	units_range=strcat('E2:E',num2str(num+1));
+	[numarr, units, rawarr, limits]=odsread('lab2.ods', 'z2', units_range,'OCT');
+
+	temp_rand=ceil(rand()*rows(minr));
+	units{temp_rand}
+#	prop(temp_rand,:)
+#	vvo(temp_rand,:)
+#	units(temp_rand,:)
+	cur_prop=minr(temp_rand)+(maxr(temp_rand)-minr(temp_rand))*rand();
+	fprintf(id,"\\textbf{Задание 2} ");
+	fprintf(id," Используя данные из справочника теплофизических свойств подобрать аппроксимирующую функцию для описания %s. Максимальное отклонение не должно превышать 10\\%%. Определить, при какой температуре %s равна $%8.1f %s$.\n\n",prop{temp_rand},prop{temp_rand},cur_prop,units{temp_rand})	#vvo{temp_rand},
+endfunction	
+
+function z5(id)
+	por=0.5+rand()*2;
+	c0=10+rand()*10;
+	k=0.1+0.3*rand();
+	cmax=0.17+0.05*rand();
+
+	fprintf(id,"\\textbf{Задание 3} ");
+	fprintf(id,"В таблице представлено изменение концентрации исходного вещества (c) от вермени ($\\tau$). Определить порядок реакции и константу скорости реакции.\n\n",por);
+	#таблица исходных данных
+	fprintf(id,"\\begin{table}[h]\n");	%\\begin{wraptable}{r}{0.15\\linewidth}\n
+	fprintf(id,"\\begin{tabular}{|c|c|}\n\\hline\n");
+	fprintf(id,"$\\tau$, с & c, моль/л \\\\ \\hline\n")
+	maxtau=(c0^(1-por)-cmax^(1-por))/(1-por)/k;
+	tn=8+ceil(rand()*8);
+	for ii=1:tn
+		ctau=maxtau/tn*(ii-1);
+		curc=(c0^(1-por)-(1-por)*k*ctau)^(1/(1-por));
+		fprintf(id,"%5.2f & %10.2f \\\\ \\hline \n",ctau,curc*normrnd(1,0.06))
 	endfor
-	cur_num=ceil(rand()*file_num);
-	file_id=fopen(file_list{cur_num},"r");
-	file_str=getnst(file_list{cur_num});
-	prop_name1=fscanf(file_id,"%s",1);
-	prop_name2=fscanf(file_id,"%s",1);
-	sub_name1=fscanf(file_id,"%s",1);
-	sub_name2=fscanf(file_id,"%s",1);
-	p_unit=fscanf(file_id,"%s",1) %fgetl(file_id);
-	c_unit=fscanf(file_id,"%s",1)
-
-	printf("%s %s",p_unit,c_unit)
-
-	fclose(file_id);
-	%%%
-	file_id=fopen("tetssdf","w");
-	fprintf(file_id,"вл опрывлаои ваи ывммчс\nss hfkjdhf sdf hsdljf ")
-	fclose(file_id);
-	
+	#endif
+	fprintf(id,"\\end{tabular}\n")
+	fprintf(id,"\\end{table}\n\n")
+	fprintf(id,"\\newpage\n\n")
 endfunction
 
 %main program
-pkg load all
+pkg load odepkg
+pkg load io
 arg_list=argv();
 if(length(arg_list)<2)
 	%if((arg_list(1)==null)||(arg_list(2)==null))
@@ -256,17 +294,29 @@ if(length(arg_list)<2)
 		break
 	%endif
 endif
+cd results
 file_id=fopen("regression.tex","w");
-fprintf(file_id,"\\textsc{\\textbf{Лабораторная работа <<Регрессионный анализ, методы аппроксимации>>}}\n\n")
-for ii=1:arg_list{2}
-	fprintf(file_id,"\\textsc{\\textbf{Вариант %d}}\n",ii)
-	fprintf(file_id,"\\begin{enumerate}\n");
+fprintf(file_id,"\\section{Лабораторная работа №~2 <<Регрессионный анализ, методы аппроксимации>>}\n\n  \\addtocounter{nlab}{1}")
+#fprintf(file_id,"\\textsc{\\textbf{Группа %s}}\n\n",arg_list{1})
+#fprintf(file_id,"\\input{regression_theory.tex}\n\n")
+
+for ii=1:str2num(arg_list{2})
+	fprintf(file_id,"\\textsc{\\textbf{Вариант %d}}\n\n",ii)
+#	fprintf(file_id,"\\begin{enumerate}\n");
 	z1(file_id)
-	z2(file_id)
-	z3(file_id)
-#	z4(file_id)
-	fprintf(file_id,"\\end{enumerate}\n");
-	fprintf(file_id,"\\newpage\n")
+#	z2(file_id)
+#	z3(file_id)
+	cd ..
+	z4(file_id)
+	cd results
+	z5(file_id)
+#	fprintf(file_id,"\\end{enumerate}\n");
+
 endfor
+fprintf(file_id,"\\newpage\n")
 fclose(file_id);
 
+
+file_id=fopen("filelist.tex","a")
+fprintf(file_id,"\n\\input{regression.tex}")
+fclose(file_id)
