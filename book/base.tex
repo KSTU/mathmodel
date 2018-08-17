@@ -106,7 +106,7 @@
 }
 
 %для клавишь
-\graphicspath{{./figures/rect/}{./figures/abs/}{./figures/old/mathcad/}{./figures/old/regress/}{./figures/old/diffeq/}{./figures/old/prog/}{./figures/phase-ideal/}{./figures/heat/}{./figures/eos/}}
+\graphicspath{{./figures/rect/}{./figures/abs/}{./figures/old/mathcad/}{./figures/old/regress/}{./figures/old/diffeq/}{./figures/old/prog/}{./figures/phase-ideal/}{./figures/heat/}{./figures/eos/}{./figures/new/mathcad/}{./figures/new/regress/}{./figures/new/diffeq/}{./figures/new/prog/}}
 
 \usepackage[os=win, mackeys=symbols]{menukeys}
 \usepackage{enumitem}
@@ -133,13 +133,16 @@
 %Вставление кусков
 
 %mathcad
-\IfStrEqCase{old}{{old}{
+\IfStrEqCase{new}{{old}{
 		\input{old/matcad.tex}
 		\input{old/regress.tex}
 		\input{old/diffeq.tex}
 		\input{old/program.tex}
 		}
-	{new}{now this is b}
+	{new}{\input{new/matcad.tex}
+		\input{new/regress.tex}
+		\input{new/diffeq.tex}
+		\input{new/program.tex}}
 	{octave}{\input{octave/octave_base.tex}}}
 
 
