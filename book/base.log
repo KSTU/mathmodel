@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  3 SEP 2017 03:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.13)  17 AUG 2018 13:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -712,60 +712,6 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 (/usr/share/texlive/texmf-dist/tex/latex/was/icomma.sty
 Package: icomma 2002/03/10 v2.0 (WaS)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xymtex/base/xymtexpdf.sty
-Package `xymtexpdf' (ver5.01) <March 10, 2013> [SF]
-xymtexpdf.sty ver5.01 (for LaTeX2e) 2013/03/10[SF]
-(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
-File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
-)
-(/usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
-Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count108
-\d@lta=\count109
-\@delta=\dimen130
-\@@delta=\dimen131
-\@gridcnt=\count110
-\@joinkind=\count111
-\@dotgap=\dimen132
-\@ddotgap=\dimen133
-\@x@diff=\count112
-\@y@diff=\count113
-\x@diff=\dimen134
-\y@diff=\dimen135
-\@dotbox=\box28
-\num@segments=\count114
-\num@segmentsi=\count115
-\@datafile=\read1
-) (/usr/share/texlive/texmf-dist/tex/latex/xymtex/base/chemstr.sty
-XyMTeX for Drawing Chemical Structural Formulas. Version 5.01
- -- Released June 19, 2013 by Shinsaku Fujita
-XyMTeX Macro File `chemstr' (ver5.01) <June 19, 2013> [SF]
-\@tempcntXa=\count116
-\@tempcntYa=\count117
-\@tempcntz=\count118
-\@tempcntXb=\count119
-\@tempcntYb=\count120
-\@tempcntzz=\count121
-\@tempcntXc=\count122
-\@tempcntYc=\count123
-\@tempcntzzz=\count124
-\@tempcntXd=\count125
-\@tempcntYd=\count126
-\@tempcntzzzz=\count127
-\@dimtempa=\dimen136
-\@tempdimd=\dimen137
-\@tempdime=\dimen138
-\@cnttempa=\count128
-\@cnttempb=\count129
-\noshift=\count130
-\shifti=\count131
-\shiftii=\count132
-\shiftiii=\count133
-\@tmpaa=\count134
-\yl@xdiff=\count135
-\yl@ydiff=\count136
-\yl@shiftii=\count137
-\yl@shifti=\count138
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
@@ -783,7 +729,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count139
+\Gread@gobject=\count108
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
@@ -795,10 +741,67 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-\x@ryl=\count140
-\y@ryl=\count141
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count109
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xymtex/base/carom.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xymtex/base/xymtexpdf.sty
+Package `xymtexpdf' (ver5.01) <March 10, 2013> [SF]
+xymtexpdf.sty ver5.01 (for LaTeX2e) 2013/03/10[SF]
+(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count110
+\d@lta=\count111
+\@delta=\dimen130
+\@@delta=\dimen131
+\@gridcnt=\count112
+\@joinkind=\count113
+\@dotgap=\dimen132
+\@ddotgap=\dimen133
+\@x@diff=\count114
+\@y@diff=\count115
+\x@diff=\dimen134
+\y@diff=\dimen135
+\@dotbox=\box28
+\num@segments=\count116
+\num@segmentsi=\count117
+\@datafile=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/xymtex/base/chemstr.sty
+XyMTeX for Drawing Chemical Structural Formulas. Version 5.01
+ -- Released June 19, 2013 by Shinsaku Fujita
+XyMTeX Macro File `chemstr' (ver5.01) <June 19, 2013> [SF]
+\@tempcntXa=\count118
+\@tempcntYa=\count119
+\@tempcntz=\count120
+\@tempcntXb=\count121
+\@tempcntYb=\count122
+\@tempcntzz=\count123
+\@tempcntXc=\count124
+\@tempcntYc=\count125
+\@tempcntzzz=\count126
+\@tempcntXd=\count127
+\@tempcntYd=\count128
+\@tempcntzzzz=\count129
+\@dimtempa=\dimen136
+\@tempdimd=\dimen137
+\@tempdime=\dimen138
+\@cnttempa=\count130
+\@cnttempb=\count131
+\noshift=\count132
+\shifti=\count133
+\shiftii=\count134
+\shiftiii=\count135
+\@tmpaa=\count136
+\yl@xdiff=\count137
+\yl@ydiff=\count138
+\yl@shiftii=\count139
+\yl@shifti=\count140
+\x@ryl=\count141
+\y@ryl=\count142
+) (/usr/share/texlive/texmf-dist/tex/latex/xymtex/base/carom.sty
 XyMTeX for Drawing Chemical Structural Formulas. Version 5.00
  -- Released October 01, 2010 by Shinsaku Fujita
 XyMTeX Macro File `carom' (ver5.00) <October 01, 2010> [SF]
@@ -846,7 +849,7 @@ XyMTeX Macro File `polymers' (ver5.00) <October 01, 2010> [SF]
 XyMTeX for Drawing Chemical Structural Formulas. Version 5.01
  -- Released July 20, 2013 by Shinsaku Fujita
 XyMTeX Macro File `methylen' (ver5.01) <July 20, 2013> [SF]
-\test@termcnt=\count142
+\test@termcnt=\count143
 ) (/usr/share/texlive/texmf-dist/tex/latex/xymtex/base/fusering.sty
 XyMTeX for Drawing Chemical Structural Formulas. Version 5.00
  -- Released October 01, 2010 by Shinsaku Fujita
@@ -855,11 +858,11 @@ XyMTeX Macro File `fusering' (ver5.00) <October 01, 2010> [SF]
 XyMTeX for Drawing Chemical Structural Formulas. Version 5.00
  -- Released October 01, 2010 by Shinsaku Fujita
 XyMTeX Macro File `sizeredc' (ver5.00) <October 01, 2010> [SF]
-\@tempcntx=\count143
-\@tempcnty=\count144
-\@tempcntz=\count145
-\@xArg=\count146
-\@yArg=\count147
+\@tempcntx=\count144
+\@tempcnty=\count145
+\@tempcntz=\count146
+\@xArg=\count147
+\@yArg=\count148
 ) (/usr/share/texlive/texmf-dist/tex/latex/xymtex/base/steroid.sty
 XyMTeX for Drawing Chemical Structural Formulas. Version 5.00
  -- Released October 01, 2010 by Shinsaku Fujita
@@ -937,10 +940,10 @@ ex
 \pgf@yc=\dimen150
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count148
-\c@pgf@countb=\count149
-\c@pgf@countc=\count150
-\c@pgf@countd=\count151
+\c@pgf@counta=\count149
+\c@pgf@countb=\count150
+\c@pgf@countc=\count151
+\c@pgf@countd=\count152
 \t@pgf@toka=\toks33
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
@@ -959,8 +962,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count152
-\pgfsyssoftpath@bigbuffer@items=\count153
+\pgfsyssoftpath@smallbuffer@items=\count153
+\pgfsyssoftpath@bigbuffer@items=\count154
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -974,7 +977,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen151
-\pgfmath@count=\count154
+\pgfmath@count=\count155
 \pgfmath@box=\box30
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
@@ -998,7 +1001,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count155
+\c@pgfmathroundto@lastzeros=\count156
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -1036,7 +1039,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box31
 \pgf@hbox=\box32
 \pgf@layerbox@main=\box33
-\pgf@picture@serial@count=\count156
+\pgf@picture@serial@count=\count157
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -1069,7 +1072,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen175
-\pgf@sys@shading@range@num=\count157
+\pgf@sys@shading@range@num=\count158
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1126,7 +1129,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count158
+\pgf@plot@mark@count=\count159
 \pgfplotmarksize=\dimen180
 )
 \tikz@lastx=\dimen181
@@ -1139,18 +1142,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box37
 \tikz@tempbox=\box38
 \tikz@tempbox@bg=\box39
-\tikztreelevel=\count159
-\tikznumberofchildren=\count160
-\tikznumberofcurrentchild=\count161
-\tikz@fig@count=\count162
+\tikztreelevel=\count160
+\tikznumberofchildren=\count161
+\tikznumberofcurrentchild=\count162
+\tikz@fig@count=\count163
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count163
-\pgfmatrixcurrentcolumn=\count164
-\pgf@matrix@numberofcolumns=\count165
+\pgfmatrixcurrentrow=\count164
+\pgfmatrixcurrentcolumn=\count165
+\pgf@matrix@numberofcolumns=\count166
 )
-\tikz@expandcount=\count166
+\tikz@expandcount=\count167
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1176,7 +1179,7 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen190
 \pgfdecoratedinputsegmentremainingdistance=\dimen191
 \pgf@decorate@distancetomove=\dimen192
-\pgf@decorate@repeatstate=\count167
+\pgf@decorate@repeatstate=\count168
 \pgfdecorationsegmentamplitude=\dimen193
 \pgfdecorationsegmentlength=\dimen194
 )
@@ -1198,32 +1201,32 @@ File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
 zlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
-\XyMTeXnuma=\count168
-\XyMTeXnumb=\count169
-\XyMTeXnumc=\count170
-\XyMTeXnumd=\count171
-\XyMTeXnume=\count172
-\XyMTeXnumf=\count173
-\XyMTeXnumg=\count174
-\XyMTeXnumh=\count175
-\XyMTeXnumi=\count176
-\XyMTeXcnta=\count177
-\XyMTeXcntb=\count178
+\XyMTeXnuma=\count169
+\XyMTeXnumb=\count170
+\XyMTeXnumc=\count171
+\XyMTeXnumd=\count172
+\XyMTeXnume=\count173
+\XyMTeXnumf=\count174
+\XyMTeXnumg=\count175
+\XyMTeXnumh=\count176
+\XyMTeXnumi=\count177
+\XyMTeXcnta=\count178
+\XyMTeXcntb=\count179
 \XyMTeXdima=\dimen195
 \XyMTeXdimb=\dimen196
 \XyMTeXdimc=\dimen197
 \XyMTeXdimd=\dimen198
 \XyMTeXdime=\dimen199
 \BondBox=\box43
-\@tempcntXa=\count179
-\@tempcntYa=\count180
-\@tempcntz=\count181
-\@tempcntXb=\count182
-\@tempcntYb=\count183
-\@tempcntzz=\count184
-\@tempcntXc=\count185
-\@tempcntYc=\count186
-\@tempcntzzz=\count187
+\@tempcntXa=\count180
+\@tempcntYa=\count181
+\@tempcntz=\count182
+\@tempcntXb=\count183
+\@tempcntYb=\count184
+\@tempcntzz=\count185
+\@tempcntXc=\count186
+\@tempcntYc=\count187
+\@tempcntzzz=\count188
 \Temp@ArCords=\toks41
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xymtex/xymtxpdf/chmst-pdf.sty
@@ -1232,8 +1235,8 @@ chmst-pdf.sty ver5.00 (for LaTeX2e) 2010/10/01[SF]
 (/usr/share/texlive/texmf-dist/tex/latex/xymtex/chemist/chemist.sty
 Package `chemist' (ver5.01) <June 6, 2013> [SF]
 chemist.sty ver5.01 (for LaTeX2e) 2013/06/06[SF]
-\c@compd=\count188
-\c@deriv=\count189
+\c@compd=\count189
+\c@deriv=\count190
 \reactarrowsep=\dimen256
 \verbatimleftmargin=\dimen257
 \verbatimbaselineskip=\dimen258
@@ -1243,14 +1246,14 @@ chemist.sty ver5.01 (for LaTeX2e) 2013/06/06[SF]
 \hwgr@d=\dimen262
 \vsepgr@d=\dimen263
 \hsepgr@d=\dimen264
-\nrep=\count190
-\nrepmax=\count191
+\nrep=\count191
+\nrepmax=\count192
 \ybaselineshift=\dimen265
 \tbaselineshift=\dimen266
 \@savetbaselineshift=\dimen267
 LaTeX Info: Redefining \rm on input line 788.
 LaTeX Info: Redefining \mathversion on input line 892.
-\c@mv@chem=\count192
+\c@mv@chem=\count193
 LaTeX Font Info:    Encoding `OML' has changed to `OT1' for symbol font
 (Font)              `letters' in the math version `chem' on input line 965.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `chem'
@@ -1259,7 +1262,7 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `chem'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/m/n on input line 965.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `chem'
 (Font)                  OMS/cmsy/m/n --> OMS/cmsy/m/n on input line 965.
-\c@mv@boldchem=\count193
+\c@mv@boldchem=\count194
 LaTeX Font Info:    Overwriting symbol font `operators' in version `boldchem'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 965.
 LaTeX Font Info:    Encoding `OML' has changed to `OT1' for symbol font
@@ -1269,7 +1272,7 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `boldchem'
 (Font)                  OML/cmm/m/it --> OT1/cmr/b/n on input line 965.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `boldchem'
 (Font)                  OMS/cmsy/m/n --> OMS/cmsy/b/n on input line 965.
-\TestCount=\count194
+\TestCount=\count195
 (/usr/share/texlive/texmf-dist/tex/latex/xymtex/chemist/assurechemist.sty
 Part of XyMTeX for Drawing Chemical Structural Formulas. Version 5.00
  -- Released October 01, 2010 by Shinsaku Fujita
@@ -1284,7 +1287,7 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count195
+\c@r@tfl@t=\count196
 \rotFPtop=\skip53
 \rotFPbot=\skip54
 \rot@float@box=\box44
@@ -1293,14 +1296,14 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen271
 \WF@size=\dimen272
-\c@WF@wrappedlines=\count196
+\c@WF@wrappedlines=\count197
 \WF@box=\box45
 \WF@everypar=\toks43
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count197
+\c@float@type=\count198
 \float@exts=\toks44
 \float@box=\box46
 \@float@everytoks=\toks45
@@ -1321,12 +1324,12 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@old@col=\dimen277
 \TX@target=\dimen278
 \TX@delta=\dimen279
-\TX@cols=\count198
+\TX@cols=\count199
 \TX@ftn=\toks47
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
-\TY@count=\count199
+\TY@count=\count266
 \TY@linewidth=\dimen280
 \tymin=\dimen281
 \tymax=\dimen282
@@ -1344,12 +1347,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen291
 \cmidrulekern=\dimen292
 \defaultaddspace=\dimen293
-\@cmidla=\count266
-\@cmidlb=\count267
+\@cmidla=\count267
+\@cmidlb=\count268
 \@aboverulesep=\dimen294
 \@belowrulesep=\dimen295
-\@thisruleclass=\count268
-\@lastruleclass=\count269
+\@thisruleclass=\count269
+\@lastruleclass=\count270
 \@thisrulewidth=\dimen296
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
@@ -1358,16 +1361,16 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip58
 \LTpre=\skip59
 \LTpost=\skip60
-\LTchunksize=\count270
+\LTchunksize=\count271
 \LTcapwidth=\dimen297
 \LT@head=\box48
 \LT@firsthead=\box49
 \LT@foot=\box50
 \LT@lastfoot=\box51
-\LT@cols=\count271
-\LT@rows=\count272
-\c@LT@tables=\count273
-\c@LT@chunks=\count274
+\LT@cols=\count272
+\LT@rows=\count273
+\c@LT@tables=\count274
+\c@LT@chunks=\count275
 \LT@p@ftn=\toks48
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
@@ -1375,7 +1378,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count275
+\etb@tempcnta=\count276
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypatterns.code.tex
@@ -1412,9 +1415,9 @@ File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-\c@nlab=\count276
-\c@zadacha.count=\count277
-\c@primer.count=\count278
+\c@nlab=\count277
+\c@zadacha.count=\count278
+\c@primer.count=\count279
 
 (/usr/share/texlive/texmf-dist/tex/latex/menukeys/menukeys.sty
 Package: menukeys 2014/03/10 v1.3 a package to format menus paths and shortcuts
@@ -1434,24 +1437,24 @@ L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
 L3 Module: l3str 2016/01/03 v6357 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/01/05 v6366 L3 Integers
-\c_max_int=\count279
-\l_tmpa_int=\count280
-\l_tmpb_int=\count281
-\g_tmpa_int=\count282
-\g_tmpb_int=\count283
+\c_max_int=\count280
+\l_tmpa_int=\count281
+\l_tmpb_int=\count282
+\g_tmpa_int=\count283
+\g_tmpb_int=\count284
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count284
+\g__prg_map_int=\count285
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2015/09/28 v6113 L3 Messages
 L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
-\l_iow_line_count_int=\count285
-\l__iow_target_count_int=\count286
-\l__iow_current_line_int=\count287
-\l__iow_current_word_int=\count288
-\l__iow_current_indentation_int=\count289
+\l_iow_line_count_int=\count286
+\l__iow_target_count_int=\count287
+\l__iow_current_line_int=\count288
+\l__iow_current_word_int=\count289
+\l__iow_current_indentation_int=\count290
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen299
 \c_max_dim=\dimen300
@@ -1472,18 +1475,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count290
-\l_keys_choice_int=\count291
+\g__keyval_level_int=\count291
+\l_keys_choice_int=\count292
 L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
-\c__fp_leading_shift_int=\count292
-\c__fp_middle_shift_int=\count293
-\c__fp_trailing_shift_int=\count294
-\c__fp_big_leading_shift_int=\count295
-\c__fp_big_middle_shift_int=\count296
-\c__fp_big_trailing_shift_int=\count297
-\c__fp_Bigg_leading_shift_int=\count298
-\c__fp_Bigg_middle_shift_int=\count299
-\c__fp_Bigg_trailing_shift_int=\count300
+\c__fp_leading_shift_int=\count293
+\c__fp_middle_shift_int=\count294
+\c__fp_trailing_shift_int=\count295
+\c__fp_big_leading_shift_int=\count296
+\c__fp_big_middle_shift_int=\count297
+\c__fp_big_trailing_shift_int=\count298
+\c__fp_Bigg_leading_shift_int=\count299
+\c__fp_Bigg_middle_shift_int=\count300
+\c__fp_Bigg_trailing_shift_int=\count301
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box52
 \l_tmpa_box=\box53
@@ -1533,20 +1536,20 @@ L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count301
+\l__driver_color_stack_int=\count302
 ))
 Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count302
-\l__xparse_m_args_int=\count303
-\l__xparse_mandatory_args_int=\count304
-\l__xparse_processor_int=\count305
-\l__xparse_v_nesting_int=\count306
+\l__xparse_current_arg_int=\count303
+\l__xparse_m_args_int=\count304
+\l__xparse_mandatory_args_int=\count305
+\l__xparse_processor_int=\count306
+\l__xparse_v_nesting_int=\count307
 )
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
-\integerpart=\count307
-\decimalpart=\count308
+\integerpart=\count308
+\decimalpart=\count309
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -1569,7 +1572,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks49
 \XKV@tempa@toks=\toks50
 )
-\XKV@depth=\count309
+\XKV@depth=\count310
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -1599,12 +1602,12 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count310
+\c@checkoddpage=\count311
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box68
-\sift@deathcycles=\count311
+\sift@deathcycles=\count312
 \@vwid@loff=\dimen338
 \@vwid@roff=\dimen339
 ))
@@ -1612,16 +1615,16 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package: relsize 2013/03/29 ver 4.1
 )
 (/usr/share/texlive/texmf-dist/tex/latex/catoptions/catoptions.sty
-\m@one=\count312
+\m@one=\count313
 \z@pt=\dimen340
 Package: catoptions 2014/08/29 v0.2.7h Securing catcodes and parsing options (A
 M)
-\cpt@csvdepth=\count313
-\cpt@optdepth=\count314
-\cpt@cnta=\count315
-\indrisdepth=\count316
-\cpt@foreachdepth=\count317
-\cpt@exprcnt=\count318
+\cpt@csvdepth=\count314
+\cpt@optdepth=\count315
+\cpt@cnta=\count316
+\indrisdepth=\count317
+\cpt@foreachdepth=\count318
+\cpt@exprcnt=\count319
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1700,7 +1703,7 @@ Package etexcmds Info: Could not find \expanded.
 . 
 . Defining command \changemenuelement with sig. 's m m m' on line 289.
 .................................................
-\c@tw@hyphen@char@num=\count319
+\c@tw@hyphen@char@num=\count320
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1742,7 +1745,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen341
 \enit@toks=\toks51
 \enit@inbox=\box69
-\enitdp@description=\count320
+\enitdp@description=\count321
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
@@ -1766,20 +1769,20 @@ LaTeX Font Info:    Redeclaring math accent \widetilde on input line 946.
 )) (./base.aux)
 \openout1 = `base.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1817,16 +1820,16 @@ LaTeX Font Info:    ... okay on input line 120.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
+\scratchcounter=\count322
 \scratchdimen=\dimen342
 \scratchbox=\box70
-\nofMPsegments=\count322
-\nofMParguments=\count323
+\nofMPsegments=\count323
+\nofMParguments=\count324
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count324
+\MPscratchCnt=\count325
 \MPscratchDim=\dimen343
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
 \everyMPtoPDFconversion=\toks53
 ) ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
@@ -1888,280 +1891,220 @@ Overfull \hbox (2.71524pt too wide) in paragraph at lines 3--4
 ым ин-стру-
  []
 
-) (./old/matcad.tex [4]
-LaTeX Font Info:    Try loading font information for T2A+cmss on input line 7.
-
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmss.fd
-File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
-Overfull \hbox (35.67899pt too wide) in paragraph at lines 7--9
-\T2A/cmr/m/n/10.95 ва-тель, име-ю-щий эле-мен-тар-ные на-вы-ки ра-бо-ты с Windo
-ws-приложениями,
- []
-
-
-Overfull \hbox (10.53107pt too wide) in paragraph at lines 7--9
-\T2A/cmr/m/n/10.95 мо-жет сра-зу на-чать ра-бо-ту с Mathcad. Ра-бо-та с до-ку-м
-ен-та-ми Mathcad
- []
-
-
-Overfull \hbox (4.63411pt too wide) in paragraph at lines 7--9
-\T2A/cmr/m/n/10.95 обыч-но не тре-бу-ет обя-за-тель-но-го ис-поль-зо-ва-ния воз
--мож-но-стей глав-
- []
-
+) (./new/matcad.tex [4]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
- [5]
-<./figures/old/mathcad/oldview.png, id=57, 551.81157pt x 301.8778pt>
-File: ./figures/old/mathcad/oldview.png Graphic file (type png)
+LaTeX Font Info:    Try loading font information for T2A+cmss on input line 9.
+ (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmss.fd
+File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+Overfull \hbox (0.39963pt too wide) in paragraph at lines 15--16
+[][] \T2A/cmr/m/n/10.95 --- поз-во-ля-ет из из-ме-нять внеш-ний вид тек-
+ []
 
-<use ./figures/old/mathcad/oldview.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldview.png used on input line 2
-2.
-(pdftex.def)             Requested size: 332.89723pt x 182.12303pt.
- [6 <./figures/old/mathcad/oldview.png>]
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 44.
+[5]
+Overfull \hbox (31.48978pt too wide) in paragraph at lines 28--29
+[]\T2A/cmr/m/n/10.95 ввести опе-ра-тор при-сва-и-ва-ния ѕ:=ї, сде-лать че-рез м
+е-ню []
+ []
 
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+[6] <./figures/new/mathcad/new-var1.png, id=60, 192.2382pt x 50.22765pt>
+File: ./figures/new/mathcad/new-var1.png Graphic file (type png)
+
+<use ./figures/new/mathcad/new-var1.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-var1.png used on input line 
+41.
+(pdftex.def)             Requested size: 192.23772pt x 50.22751pt.
+
+<./figures/new/mathcad/new-var2.png, id=62, 46.61415pt x 26.7399pt>
+File: ./figures/new/mathcad/new-var2.png Graphic file (type png)
+
+<use ./figures/new/mathcad/new-var2.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-var2.png used on input line 
+46.
+(pdftex.def)             Requested size: 46.61403pt x 26.73982pt.
+
+Overfull \hbox (7.0516pt too wide) in paragraph at lines 51--52
+\T2A/cmr/m/n/10.95 про-во-дить опре-де-ле-ние раз-мер-но-сти ре-зуль-ти-ру-ю-ще
+й ве-ли-чи-ны. Это
+ []
+
+[7 <./figures/new/mathcad/new-var1.png> <./figures/new/mathcad/new-var2.png>]
+<./figures/new/mathcad/new-ed-izm.png, id=71, 203.0787pt x 84.5559pt>
+File: ./figures/new/mathcad/new-ed-izm.png Graphic file (type png)
+
+<use ./figures/new/mathcad/new-ed-izm.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-ed-izm.png used on input lin
+e 57.
+(pdftex.def)             Requested size: 203.0782pt x 84.55566pt.
+ [8 <./figures/new/mathcad/new-ed-izm.png>]
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 80.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-<./figures/old/mathcad/oldz1.png, id=61, 185.19188pt x 33.87656pt>
-File: ./figures/old/mathcad/oldz1.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz1.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz1.png used on input line 47.
-
-(pdftex.def)             Requested size: 185.1914pt x 33.87646pt.
- [7 <./figures/old/mathcad/oldz1.png>]
-<./figures/old/mathcad/oldz2.png, id=68, 257.46187pt x 57.96657pt>
-File: ./figures/old/mathcad/oldz2.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz2.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz2.png used on input line 61.
-
-(pdftex.def)             Requested size: 257.46123pt x 57.96642pt.
- [8 <./figures/old/mathcad/oldz2.png>]
-<./figures/old/mathcad/oldz3-m.png, id=72, 81.30376pt x 33.87656pt>
-File: ./figures/old/mathcad/oldz3-m.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz3-m.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz3-m.png used on input line 8
-3.
-(pdftex.def)             Requested size: 81.30354pt x 33.87646pt.
-
-<./figures/old/mathcad/oldz3.png, id=73, 186.6975pt x 111.41624pt>
-File: ./figures/old/mathcad/oldz3.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz3.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz3.png used on input line 92.
-
-(pdftex.def)             Requested size: 186.69704pt x 111.41597pt.
- [9 <./figures/old/mathcad/oldz3-m.png> <./figures/old/mathcad/oldz3.png>]
-<./figures/old/mathcad/oldz3-2.png, id=77, 192.72pt x 96.36pt>
-File: ./figures/old/mathcad/oldz3-2.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz3-2.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz3-2.png used on input line 1
-05.
-(pdftex.def)             Requested size: 192.71951pt x 96.35974pt.
- [10]
-<./figures/old/mathcad/oldz3-3.png, id=81, 15.80907pt x 15.05624pt>
-File: ./figures/old/mathcad/oldz3-3.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz3-3.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz3-3.png used on input line 1
-09.
-(pdftex.def)             Requested size: 15.809pt x 15.0562pt.
-
-<./figures/old/mathcad/oldz3-4.png, id=82, 200.24812pt x 115.18031pt>
-File: ./figures/old/mathcad/oldz3-4.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz3-4.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz3-4.png used on input line 1
-14.
-(pdftex.def)             Requested size: 200.24763pt x 115.18001pt.
- [11 <./figures/old/mathcad/oldz3-2.png> <./figures/old/mathcad/oldz3-3.png> <.
-/figures/old/mathcad/oldz3-4.png>]
-<./figures/old/mathcad/oldz4-1.png, id=86, 75.28125pt x 18.0675pt>
-File: ./figures/old/mathcad/oldz4-1.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz4-1.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz4-1.png used on input line 1
-26.
-(pdftex.def)             Requested size: 75.28105pt x 18.06744pt.
-
-<./figures/old/mathcad/oldz4-2.png, id=87, 136.25906pt x 109.1578pt>
-File: ./figures/old/mathcad/oldz4-2.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz4-2.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz4-2.png used on input line 1
-41.
-(pdftex.def)             Requested size: 136.25871pt x 109.15753pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./figures/old/mathcad/oldz5-1.png, id=88, 198.7425pt x 76.78688pt>
-File: ./figures/old/mathcad/oldz5-1.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz5-1.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz5-1.png used on input line 1
-49.
-(pdftex.def)             Requested size: 198.742pt x 76.78668pt.
- [12 <./figures/old/mathcad/oldz4-1.png>] [13 <./figures/old/mathcad/oldz4-2.pn
-g> <./figures/old/mathcad/oldz5-1.png>]
-<./figures/old/mathcad/oldz5-2.png, id=96, 313.17pt x 115.18031pt>
-File: ./figures/old/mathcad/oldz5-2.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz5-2.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz5-2.png used on input line 1
-60.
-(pdftex.def)             Requested size: 313.16922pt x 115.18001pt.
- [14 <./figures/old/mathcad/oldz5-2.png>] <./figures/old/mathcad/oldz6-1.png, i
-d=100, 238.64156pt x 88.83188pt>
-File: ./figures/old/mathcad/oldz6-1.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz6-1.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz6-1.png used on input line 1
-89.
-(pdftex.def)             Requested size: 238.64096pt x 88.83165pt.
-
-<./figures/old/mathcad/oldz6-2.png, id=101, 277.035pt x 96.36pt>
-File: ./figures/old/mathcad/oldz6-2.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz6-2.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz6-2.png used on input line 1
-97.
-(pdftex.def)             Requested size: 277.03432pt x 96.35974pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./figures/old/mathcad/oldz7-1.png, id=102, 16.56187pt x 15.05624pt>
-File: ./figures/old/mathcad/oldz7-1.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz7-1.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz7-1.png used on input line 2
-03.
-(pdftex.def)             Requested size: 16.56183pt x 15.0562pt.
-
-<./figures/old/mathcad/oldz7-2.png, id=103, 168.63pt x 125.71968pt>
-File: ./figures/old/mathcad/oldz7-2.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz7-2.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz7-2.png used on input line 2
-06.
-(pdftex.def)             Requested size: 168.62958pt x 125.71936pt.
- [15 <./figures/old/mathcad/oldz6-1.png>] [16 <./figures/old/mathcad/oldz6-2.pn
-g> <./figures/old/mathcad/oldz7-1.png> <./figures/old/mathcad/oldz7-2.png>]
-Overfull \hbox (1.35686pt too wide) in paragraph at lines 221--222
-[]\T2A/cmr/m/n/10.95 С по-мо-щью опи-сан-но-го ме-то-да мож-но по-стро-ить гра-
-фи-ки функ-
+Overfull \hbox (43.78549pt too wide) in paragraph at lines 82--83
+\T2A/cmr/m/n/10.95 ния ин-дек-сов в ме-ню []  []  [],
  []
 
-[17] <./figures/old/mathcad/oldz8-1.png, id=116, 242.40562pt x 172.39406pt>
-File: ./figures/old/mathcad/oldz8-1.png Graphic file (type png)
+<./figures/new/mathcad/new-mat1.png, id=77, 203.8014pt x 140.2038pt>
+File: ./figures/new/mathcad/new-mat1.png Graphic file (type png)
 
-<use ./figures/old/mathcad/oldz8-1.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz8-1.png used on input line 2
-28.
-(pdftex.def)             Requested size: 242.40501pt x 172.39363pt.
+<use ./figures/new/mathcad/new-mat1.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-mat1.png used on input line 
+84.
+(pdftex.def)             Requested size: 203.80089pt x 140.20345pt.
+ [9 <./figures/new/mathcad/new-mat1.png>] <./figures/new/mathcad/new-mat2.png, 
+id=83, 203.8014pt x 140.2038pt>
+File: ./figures/new/mathcad/new-mat2.png Graphic file (type png)
 
-<./figures/old/mathcad/oldz11-1.png, id=117, 23.33719pt x 17.31468pt>
-File: ./figures/old/mathcad/oldz11-1.png Graphic file (type png)
+<use ./figures/new/mathcad/new-mat2.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-mat2.png used on input line 
+92.
+(pdftex.def)             Requested size: 203.80089pt x 140.20345pt.
+ [10 <./figures/new/mathcad/new-mat2.png>] <./figures/new/mathcad/new-mat3.png,
+ id=88, 189.3474pt x 141.6492pt>
+File: ./figures/new/mathcad/new-mat3.png Graphic file (type png)
 
-<use ./figures/old/mathcad/oldz11-1.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz11-1.png used on input line 
-233.
-(pdftex.def)             Requested size: 23.33711pt x 17.31462pt.
+<use ./figures/new/mathcad/new-mat3.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-mat3.png used on input line 
+109.
+(pdftex.def)             Requested size: 189.34692pt x 141.64883pt.
+ [11 <./figures/new/mathcad/new-mat3.png>] <./figures/new/mathcad/new-tab1.png,
+ id=93, 166.221pt x 114.1866pt>
+File: ./figures/new/mathcad/new-tab1.png Graphic file (type png)
 
-<./figures/old/mathcad/oldz11-2.png, id=118, 170.88844pt x 77.53969pt>
-File: ./figures/old/mathcad/oldz11-2.png Graphic file (type png)
+<use ./figures/new/mathcad/new-tab1.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-tab1.png used on input line 
+117.
+(pdftex.def)             Requested size: 166.22057pt x 114.18631pt.
 
-<use ./figures/old/mathcad/oldz11-2.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz11-2.png used on input line 
-237.
-(pdftex.def)             Requested size: 170.88802pt x 77.53947pt.
- [18 <./figures/old/mathcad/oldz8-1.png> <./figures/old/mathcad/oldz11-1.png> <
-./figures/old/mathcad/oldz11-2.png>]
-<./figures/old/mathcad/oldz9-1.png, id=122, 328.97906pt x 158.84344pt>
-File: ./figures/old/mathcad/oldz9-1.png Graphic file (type png)
-
-<use ./figures/old/mathcad/oldz9-1.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz9-1.png used on input line 2
-55.
-(pdftex.def)             Requested size: 328.97826pt x 158.84305pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19] [20 <./figures/old/mathcad/oldz9-1.png>]
-Overfull \hbox (4.69572pt too wide) in paragraph at lines 270--271
-[]\T2A/cmr/m/n/10.95 Пример за-да-ния 13: Ре-ши-те си-сте-му нели-ней-ных урав-
-не-ний $[] \OT1/cmr/m/n/10.95 +
+Overfull \hbox (13.4474pt too wide) in paragraph at lines 137--138
+\T2A/cmr/m/n/10.95 звать спи-сок всех встро-ен-ных функ-ций в пунк-те []  []. 
  []
 
-<./figures/old/mathcad/oldz9-2.png, id=131, 212.29312pt x 99.37125pt>
-File: ./figures/old/mathcad/oldz9-2.png Graphic file (type png)
+[12 <./figures/new/mathcad/new-tab1.png>]
+<./figures/new/mathcad/new-fun1.png, id=98, 234.1548pt x 67.2111pt>
+File: ./figures/new/mathcad/new-fun1.png Graphic file (type png)
 
-<use ./figures/old/mathcad/oldz9-2.png>
-Package pdftex.def Info: ./figures/old/mathcad/oldz9-2.png used on input line 2
-73.
-(pdftex.def)             Requested size: 212.2926pt x 99.371pt.
+<use ./figures/new/mathcad/new-fun1.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-fun1.png used on input line 
+139.
+(pdftex.def)             Requested size: 234.15422pt x 67.21094pt.
 
-Overfull \hbox (9.46426pt too wide) in paragraph at lines 280--281
+Overfull \hbox (19.97339pt too wide) in paragraph at lines 145--148
+\T2A/cmr/m/n/10.95 бы вве-сти тек-сто-вую об-ласть, вы-бе-ри-те пункт []  []
+ []
+
+<./figures/new/mathcad/new-plot1.png, id=99, 213.1965pt x 308.5929pt>
+File: ./figures/new/mathcad/new-plot1.png Graphic file (type png)
+
+<use ./figures/new/mathcad/new-plot1.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-plot1.png used on input line
+ 155.
+(pdftex.def)             Requested size: 213.19597pt x 308.59213pt.
+ [13 <./figures/new/mathcad/new-fun1.png>]
+Overfull \hbox (23.40005pt too wide) in paragraph at lines 162--163
+\T2A/cmr/m/n/10.95 жать кноп-ку solve на па-не-ли []  []  [].
+ []
+
+<./figures/new/mathcad/new-symbol1.png, id=105, 142.3719pt x 104.0688pt>
+File: ./figures/new/mathcad/new-symbol1.png Graphic file (type png)
+
+<use ./figures/new/mathcad/new-symbol1.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-symbol1.png used on input li
+ne 166.
+(pdftex.def)             Requested size: 142.37154pt x 104.06854pt.
+ [14 <./figures/new/mathcad/new-plot1.png>] [15 <./figures/new/mathcad/new-symb
+ol1.png>]
+<./figures/new/mathcad/new-eq1.png, id=114, 222.5916pt x 304.07602pt>
+File: ./figures/new/mathcad/new-eq1.png Graphic file (type png)
+
+<use ./figures/new/mathcad/new-eq1.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-eq1.png used on input line 1
+80.
+(pdftex.def)             Requested size: 222.59105pt x 304.07527pt.
+ [16 <./figures/new/mathcad/new-eq1.png>] <./figures/new/mathcad/new-eq2.png, i
+d=119, 128.45993pt x 183.20445pt>
+File: ./figures/new/mathcad/new-eq2.png Graphic file (type png)
+
+<use ./figures/new/mathcad/new-eq2.png>
+Package pdftex.def Info: ./figures/new/mathcad/new-eq2.png used on input line 1
+94.
+(pdftex.def)             Requested size: 128.45961pt x 183.204pt.
+
+Overfull \hbox (9.46426pt too wide) in paragraph at lines 200--201
 []\T2A/cmr/m/n/10.95 Для ка-ких це-лей пред-на-зна-чен ма-те-ма-ти-че-ский па-к
 ет Mathcad? 
  []
 
-) (./old/regress.tex [21 <./figures/old/mathcad/oldz9-2.png>]
-Overfull \hbox (18.34712pt too wide) in paragraph at lines 18--19
-\T2A/cmr/m/n/10.95 фор-му-ле мож-но под-счи-тать с по-мо-щью встро-ен-ной функ-
-ции \T2A/cmtt/m/n/10.95 corr(x,y)
+[17 <./figures/new/mathcad/new-eq2.png>]
+Overfull \hbox (2.66333pt too wide) in paragraph at lines 206--207
+[]\T2A/cmr/m/n/10.95 Что яв-ля-ет-ся ре-зуль-та-том ре-ше-ния си-сте-мы нели-не
+й-ных урав-
  []
 
-[22]
-<./figures/old/regress/old-regress-1-1.png, id=143, 331.99031pt x 408.77719pt>
-File: ./figures/old/regress/old-regress-1-1.png Graphic file (type png)
+) (./new/regress.tex [18] [19] [20]
+<./figures/new/regress/new-regress-1-1.png, id=138, 291.2481pt x 387.3672pt>
+File: ./figures/new/regress/new-regress-1-1.png Graphic file (type png)
 
-<use ./figures/old/regress/old-regress-1-1.png>
-Package pdftex.def Info: ./figures/old/regress/old-regress-1-1.png used on inpu
+<use ./figures/new/regress/new-regress-1-1.png>
+Package pdftex.def Info: ./figures/new/regress/new-regress-1-1.png used on inpu
 t line 45.
-(pdftex.def)             Requested size: 331.98949pt x 408.77618pt.
- [23] [24 <./figures/old/regress/old-regress-1-1.png>]
-Overfull \hbox (1.5978pt too wide) in paragraph at lines 59--60
-\T2A/cmr/m/n/10.95 по-ли-но-ми-аль-ной ре-грес-сии, опи-сы-ва-ю-щую экс-пе-ри-м
-ен-таль-ные дан-
- []
+(pdftex.def)             Requested size: 291.24738pt x 387.36626pt.
 
+<./figures/new/regress/new-regress-1-2.png, id=139, 293.23552pt x 102.26205pt>
+File: ./figures/new/regress/new-regress-1-2.png Graphic file (type png)
 
-Overfull \hbox (5.39154pt too wide) in paragraph at lines 59--60
-\T2A/cmr/m/n/10.95 ные. Гра-фи-че-ски и чис-лен-но опре-де-ли-те точ-ность по-л
-у-чен-ной функ-
- []
+<use ./figures/new/regress/new-regress-1-2.png>
+Package pdftex.def Info: ./figures/new/regress/new-regress-1-2.png used on inpu
+t line 48.
+(pdftex.def)             Requested size: 293.2348pt x 102.26178pt.
+ [21 <./figures/new/regress/new-regress-1-1.png>]
+<./figures/new/regress/new-regress-2.png, id=144, 215.72595pt x 441.20834pt>
+File: ./figures/new/regress/new-regress-2.png Graphic file (type png)
 
+<use ./figures/new/regress/new-regress-2.png>
+Package pdftex.def Info: ./figures/new/regress/new-regress-2.png used on input 
+line 65.
+(pdftex.def)             Requested size: 215.72542pt x 441.20724pt.
+ [22 <./figures/new/regress/new-regress-1-2.png>] [23 <./figures/new/regress/ne
+w-regress-2.png>]
+<./figures/new/regress/new-regress-3-1.png, id=153, 215.3646pt x 268.8444pt>
+File: ./figures/new/regress/new-regress-3-1.png Graphic file (type png)
 
-Overfull \hbox (20.2894pt too wide) in paragraph at lines 65--66
+<use ./figures/new/regress/new-regress-3-1.png>
+Package pdftex.def Info: ./figures/new/regress/new-regress-3-1.png used on inpu
+t line 81.
+(pdftex.def)             Requested size: 215.36406pt x 268.84375pt.
+
+<./figures/new/regress/new-regress-3-2.png, id=154, 218.2554pt x 312.2064pt>
+File: ./figures/new/regress/new-regress-3-2.png Graphic file (type png)
+
+<use ./figures/new/regress/new-regress-3-2.png>
+Package pdftex.def Info: ./figures/new/regress/new-regress-3-2.png used on inpu
+t line 84.
+(pdftex.def)             Requested size: 218.25485pt x 312.20564pt.
+ [24 <./figures/new/regress/new-regress-3-1.png>]
+Overfull \hbox (20.2894pt too wide) in paragraph at lines 93--94
 []\T2A/cmtt/m/n/10.95 expfit(x, y, g) \T2A/cmr/m/n/10.95 --- ре-грес-сия экс-по
 -нен-ци-аль-ной функ-ци-ей $\OML/cmm/m/it/10.95 y\OT1/cmr/m/n/10.95 (\OML/cmm/m
 /it/10.95 x\OT1/cmr/m/n/10.95 ) =
  []
 
 
-Overfull \hbox (1.53976pt too wide) in paragraph at lines 66--67
+Overfull \hbox (1.53976pt too wide) in paragraph at lines 94--95
 []\T2A/cmtt/m/n/10.95 lgsfit(x, y, g) \T2A/cmr/m/n/10.95 --- ре-грес-сия ло-ги-
 сти-че-ской функ-ци-ей $\OML/cmm/m/it/10.95 y\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/
 10.95 x\OT1/cmr/m/n/10.95 ) =
  []
 
-
-Overfull \hbox (0.57347pt too wide) in paragraph at lines 67--68
+[25 <./figures/new/regress/new-regress-3-2.png>]
+Overfull \hbox (0.57347pt too wide) in paragraph at lines 95--96
 []\T2A/cmtt/m/n/10.95 sinfit(x, y, g) \T2A/cmr/m/n/10.95 --- си-ну-со-и-даль-на
 я ре-грес-сия $\OML/cmm/m/it/10.95 y\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\O
 T1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 asin\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/
@@ -2169,176 +2112,369 @@ T1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 asin\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/
  []
 
 
-Overfull \hbox (18.94815pt too wide) in paragraph at lines 69--70
+Overfull \hbox (18.94815pt too wide) in paragraph at lines 97--98
 []\T2A/cmtt/m/n/10.95 logfit(x, y, g) \T2A/cmr/m/n/10.95 --- ре-грес-сия ло-га-
 риф-ми-че-ской функ-ци-ей $\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/
 it/10.95 x\OT1/cmr/m/n/10.95 ) =
  []
 
-[25]
-Overfull \hbox (1.82271pt too wide) in paragraph at lines 74--76
-[]\T2A/cmr/m/n/10.95 Обобщенная ре-грес-сия --- эти функ-ции ис-поль-зу-ют-ся к
-о-гда необ-
- []
+<./figures/new/regress/new-regress-4.png, id=165, 206.6922pt x 534.798pt>
+File: ./figures/new/regress/new-regress-4.png Graphic file (type png)
 
-[26]
-Overfull \hbox (4.22884pt too wide) in paragraph at lines 116--117
-[][] 
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 117--117
-[]\T2A/cmr/m/n/10.95 Рис. 2.1: Схе-ма-ти-че-ское изоб-ра-же-ние
- []
+<use ./figures/new/regress/new-regress-4.png>
+Package pdftex.def Info: ./figures/new/regress/new-regress-4.png used on input 
+line 112.
+(pdftex.def)             Requested size: 206.69168pt x 534.79669pt.
+ [26]
+Overfull \vbox (22.64706pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 120--121
-\T2A/cmr/m/n/10.95 точ-ных дан-ных, пред-
- []
+[27 <./figures/new/regress/new-regress-4.png>]
+<./figures/new/regress/new-regress-5-1.png, id=174, 210.3057pt x 137.13232pt>
+File: ./figures/new/regress/new-regress-5-1.png Graphic file (type png)
 
+<use ./figures/new/regress/new-regress-5-1.png>
+Package pdftex.def Info: ./figures/new/regress/new-regress-5-1.png used on inpu
+t line 154.
+(pdftex.def)             Requested size: 210.30518pt x 137.13197pt.
 
-Underfull \hbox (badness 2119) in paragraph at lines 120--121
-\T2A/cmr/m/n/10.95 став-лен-ных в дис-крет-
- []
+<./figures/new/regress/new-regress-5-2.png, id=175, 210.84773pt x 287.81528pt>
+File: ./figures/new/regress/new-regress-5-2.png Graphic file (type png)
 
+<use ./figures/new/regress/new-regress-5-2.png>
+Package pdftex.def Info: ./figures/new/regress/new-regress-5-2.png used on inpu
+t line 158.
+(pdftex.def)             Requested size: 210.84721pt x 287.81458pt.
+ [28 <./figures/new/regress/new-regress-5-1.png>]) (./new/diffeq.tex [29 <./fig
+ures/new/regress/new-regress-5-2.png>] [30] [31]
+<./figures/new/diffeq/new-diffeq-1-1.png, id=191, 229.27658pt x 86.18198pt>
+File: ./figures/new/diffeq/new-diffeq-1-1.png Graphic file (type png)
 
-Underfull \hbox (badness 1584) in paragraph at lines 120--121
-\T2A/cmr/m/n/10.95 ном ви-де (на-при-мер в
- []
+<use ./figures/new/diffeq/new-diffeq-1-1.png>
+Package pdftex.def Info: ./figures/new/diffeq/new-diffeq-1-1.png used on input 
+line 56.
+(pdftex.def)             Requested size: 229.27602pt x 86.18175pt.
 
+<./figures/new/diffeq/new-diffeq-1-2.png, id=192, 231.9867pt x 216.26797pt>
+File: ./figures/new/diffeq/new-diffeq-1-2.png Graphic file (type png)
 
-Underfull \hbox (badness 4353) in paragraph at lines 120--121
-\T2A/cmr/m/n/10.95 слу-чае чис-лен-но-го ре-
- []
+<use ./figures/new/diffeq/new-diffeq-1-2.png>
+Package pdftex.def Info: ./figures/new/diffeq/new-diffeq-1-2.png used on input 
+line 59.
+(pdftex.def)             Requested size: 231.98611pt x 216.26744pt.
+ [32 <./figures/new/diffeq/new-diffeq-1-1.png>]
+<./figures/new/diffeq/new-diffeq-2-1.png, id=197, 213.01582pt x 140.38448pt>
+File: ./figures/new/diffeq/new-diffeq-2-1.png Graphic file (type png)
 
+<use ./figures/new/diffeq/new-diffeq-2-1.png>
+Package pdftex.def Info: ./figures/new/diffeq/new-diffeq-2-1.png used on input 
+line 72.
+(pdftex.def)             Requested size: 213.0153pt x 140.38411pt.
 
-Underfull \hbox (badness 1478) in paragraph at lines 120--121
-\T2A/cmr/m/n/10.95 ше-ния диф-фе-рен-ци-аль-
- []
+<./figures/new/diffeq/new-diffeq-2-2.png, id=198, 213.01582pt x 216.81pt>
+File: ./figures/new/diffeq/new-diffeq-2-2.png Graphic file (type png)
 
+<use ./figures/new/diffeq/new-diffeq-2-2.png>
+Package pdftex.def Info: ./figures/new/diffeq/new-diffeq-2-2.png used on input 
+line 76.
+(pdftex.def)             Requested size: 213.0153pt x 216.80946pt.
+ [33 <./figures/new/diffeq/new-diffeq-1-2.png> <./figures/new/diffeq/new-diffeq
+-2-1.png>] [34 <./figures/new/diffeq/new-diffeq-2-2.png>]
+<./figures/new/diffeq/new-diffeq-3.png, id=209, 184.83052pt x 297.57173pt>
+File: ./figures/new/diffeq/new-diffeq-3.png Graphic file (type png)
 
-Underfull \hbox (badness 6493) in paragraph at lines 120--121
-\T2A/cmr/m/n/10.95 ных урав-не-ний) удоб-
- []
+<use ./figures/new/diffeq/new-diffeq-3.png>
+Package pdftex.def Info: ./figures/new/diffeq/new-diffeq-3.png used on input li
+ne 96.
+(pdftex.def)             Requested size: 184.83006pt x 297.57098pt.
+ [35 <./figures/new/diffeq/new-diffeq-3.png>]
+<./figures/new/diffeq/new-diffeq-4-1.png, id=215, 262.3401pt x 198.92317pt>
+File: ./figures/new/diffeq/new-diffeq-4-1.png Graphic file (type png)
 
+<use ./figures/new/diffeq/new-diffeq-4-1.png>
+Package pdftex.def Info: ./figures/new/diffeq/new-diffeq-4-1.png used on input 
+line 116.
+(pdftex.def)             Requested size: 262.33945pt x 198.92267pt.
 
-Underfull \hbox (badness 5667) in paragraph at lines 120--121
-\T2A/cmr/m/n/10.95 ны. Сплайн пред-став-
- []
+<./figures/new/diffeq/new-diffeq-4-2.png, id=216, 263.0628pt x 484.9317pt>
+File: ./figures/new/diffeq/new-diffeq-4-2.png Graphic file (type png)
 
-
-Overfull \hbox (2.66333pt too wide) in paragraph at lines 128--129
-[]\T2A/cmr/m/n/10.95 Что яв-ля-ет-ся ре-зуль-та-том ре-ше-ния си-сте-мы нели-не
-й-ных урав-
- []
-
-[27]) (./old/diffeq.tex [28] [29] [30] [31]
-Overfull \hbox (7.10591pt too wide) in paragraph at lines 70--71
+<use ./figures/new/diffeq/new-diffeq-4-2.png>
+Package pdftex.def Info: ./figures/new/diffeq/new-diffeq-4-2.png used on input 
+line 119.
+(pdftex.def)             Requested size: 263.06215pt x 484.93051pt.
+ [36 <./figures/new/diffeq/new-diffeq-4-1.png>] [37 <./figures/new/diffeq/new-d
+iffeq-4-2.png>]
+Overfull \hbox (7.10591pt too wide) in paragraph at lines 127--128
 []\T2A/cmr/m/n/10.95 Для ре-ше-ния кра-е-вых за-дач в Mathcad име-ет-ся встро-е
 н-ная функ-
  []
 
-[32]
-Overfull \hbox (8.46504pt too wide) in paragraph at lines 84--85
+[38]
+<./figures/new/diffeq/new-diffeq-5-1.png, id=229, 199.4652pt x 165.4983pt>
+File: ./figures/new/diffeq/new-diffeq-5-1.png Graphic file (type png)
+
+<use ./figures/new/diffeq/new-diffeq-5-1.png>
+Package pdftex.def Info: ./figures/new/diffeq/new-diffeq-5-1.png used on input 
+line 148.
+(pdftex.def)             Requested size: 199.4647pt x 165.49788pt.
+
+<./figures/new/diffeq/new-diffeq-5-2.png, id=230, 198.7425pt x 373.99725pt>
+File: ./figures/new/diffeq/new-diffeq-5-2.png Graphic file (type png)
+
+<use ./figures/new/diffeq/new-diffeq-5-2.png>
+Package pdftex.def Info: ./figures/new/diffeq/new-diffeq-5-2.png used on input 
+line 152.
+(pdftex.def)             Requested size: 198.742pt x 373.99632pt.
+ [39 <./figures/new/diffeq/new-diffeq-5-1.png>]
+Overfull \hbox (8.46504pt too wide) in paragraph at lines 158--159
 []\T2A/cmr/m/n/10.95 При со-став-ле-нии диф-фе-рен-ци-аль-но-го урав-не-ния нео
 б-хо-ди-мо учи-
  []
 
-[33]) (./old/program.tex [34]
-Overfull \hbox (1.30322pt too wide) in paragraph at lines 17--19
+[40 <./figures/new/diffeq/new-diffeq-5-2.png>]
+Missing character: There is no м in font cmr10!
+ [41] [42]) (./new/program.tex
+[43] <./figures/new/prog/new-prog-1.png, id=249, 48.78226pt x 33.78622pt>
+File: ./figures/new/prog/new-prog-1.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-1.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-1.png used on input line 1
+1.
+(pdftex.def)             Requested size: 48.78212pt x 33.78613pt.
+
+<./figures/new/prog/new-prog-2.png, id=250, 61.61017pt x 65.58502pt>
+File: ./figures/new/prog/new-prog-2.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-2.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-2.png used on input line 1
+8.
+(pdftex.def)             Requested size: 61.61pt x 65.58484pt.
+ [44 <./figures/new/prog/new-prog-1.png>]
+Overfull \hbox (1.30322pt too wide) in paragraph at lines 21--23
 \T2A/cmr/m/n/10.95 ле-ны от осталь-ной про-грам-мы, и вы-пол-не-ние со-от-вет-с
 тву-ю-щих дей-
  []
 
-[35] [36]
-Overfull \hbox (13.09315pt too wide) in paragraph at lines 30--31
-[]\T2A/cmr/m/n/10.95 Пример за-да-ния 2: За-дай-те поль-зо-ва-тель-скую функ-ци
-ю $\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x;y;z\OT1/cmr/m
-/n/10.95 ) =
+[45 <./figures/new/prog/new-prog-2.png>]
+<./figures/new/prog/new-prog-3.png, id=259, 62.51355pt x 77.50958pt>
+File: ./figures/new/prog/new-prog-3.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-3.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-3.png used on input line 3
+1.
+(pdftex.def)             Requested size: 62.51338pt x 77.50938pt.
+
+<./figures/new/prog/new-prog-4.png, id=260, 83.47185pt x 59.62276pt>
+File: ./figures/new/prog/new-prog-4.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-4.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-4.png used on input line 3
+7.
+(pdftex.def)             Requested size: 83.47163pt x 59.6226pt.
+
+Underfull \hbox (badness 1062) in paragraph at lines 44--44
+[]|  \T2A/cmr/m/n/10.95 При-мер за-да-ния 3: За-дай-те поль-зо-ва-тель-скую фун
+к-цию
  []
 
+<./figures/new/prog/new-prog-5.png, id=261, 213.55785pt x 58.71938pt>
+File: ./figures/new/prog/new-prog-5.png Graphic file (type png)
 
-Overfull \hbox (10.52747pt too wide) in paragraph at lines 38--41
-\T2A/cmr/m/n/10.95 стро-е-ние про-грамм про-во-дит-ся с ис-поль-зо-ва-ни-ем спе
--ци-аль-ных управ-
- []
-
-
-Overfull \hbox (13.1011pt too wide) in paragraph at lines 38--41
-\T2A/cmr/m/n/10.95 опе-ра-тор с кла-ви-а-ту-ры нель-зя ^^U он бу-дет вос-при-ня
-т си-сте-мой Mathcad
- []
-
+<use ./figures/new/prog/new-prog-5.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-5.png used on input line 4
+6.
+(pdftex.def)             Requested size: 213.55731pt x 58.71921pt.
+ [46 <./figures/new/prog/new-prog-3.png> <./figures/new/prog/new-prog-4.png> <.
+/figures/new/prog/new-prog-5.png>]
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 42.
-[37]
-Overfull \hbox (0.5514pt too wide) in paragraph at lines 58--59
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 53.
+
+<./figures/new/prog/new-prog-6.png, id=269, 54.74452pt x 42.81998pt>
+File: ./figures/new/prog/new-prog-6.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-6.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-6.png used on input line 5
+7.
+(pdftex.def)             Requested size: 54.74437pt x 42.81987pt.
+
+<./figures/new/prog/new-prog-7.png, id=270, 177.7842pt x 42.81998pt>
+File: ./figures/new/prog/new-prog-7.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-7.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-7.png used on input line 6
+3.
+(pdftex.def)             Requested size: 177.78374pt x 42.81987pt.
+ [47 <./figures/new/prog/new-prog-6.png>] <./figures/new/prog/new-prog-8.png, i
+d=277, 98.2872pt x 35.77365pt>
+File: ./figures/new/prog/new-prog-8.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-8.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-8.png used on input line 6
+9.
+(pdftex.def)             Requested size: 98.28694pt x 35.77354pt.
+
+<./figures/new/prog/new-prog-9.png, id=278, 55.6479pt x 35.77365pt>
+File: ./figures/new/prog/new-prog-9.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-9.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-9.png used on input line 7
+4.
+(pdftex.def)             Requested size: 55.64775pt x 35.77354pt.
+
+<./figures/new/prog/new-prog-10.png, id=279, 99.37125pt x 49.68562pt>
+File: ./figures/new/prog/new-prog-10.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-10.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-10.png used on input line 
+81.
+(pdftex.def)             Requested size: 99.371pt x 49.6855pt.
+
+Overfull \hbox (0.5514pt too wide) in paragraph at lines 84--85
 \T2A/cmr/m/n/10.95 бы-ва-ет нуж-но оста-но-вить при вы-пол-не-нии неко-то-ро-го
  усло-вия, опе-
  []
 
-[38] [39]) (./phase.tex [40]
-Overfull \hbox (4.39456pt too wide) in paragraph at lines 14--15
+<./figures/new/prog/new-prog-11.png, id=280, 155.01915pt x 157.90994pt>
+File: ./figures/new/prog/new-prog-11.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-11.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-11.png used on input line 
+88.
+(pdftex.def)             Requested size: 155.01877pt x 157.90955pt.
+ [48 <./figures/new/prog/new-prog-7.png> <./figures/new/prog/new-prog-8.png> <.
+/figures/new/prog/new-prog-9.png> <./figures/new/prog/new-prog-10.png>]
+<./figures/new/prog/new-prog-12.png, id=288, 44.8074pt x 45.71077pt>
+File: ./figures/new/prog/new-prog-12.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-12.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-12.png used on input line 
+95.
+(pdftex.def)             Requested size: 44.80728pt x 45.71063pt.
+
+<./figures/new/prog/new-prog-13.png, id=289, 153.2124pt x 139.11975pt>
+File: ./figures/new/prog/new-prog-13.png Graphic file (type png)
+
+<use ./figures/new/prog/new-prog-13.png>
+Package pdftex.def Info: ./figures/new/prog/new-prog-13.png used on input line 
+104.
+(pdftex.def)             Requested size: 153.212pt x 139.1194pt.
+ [49 <./figures/new/prog/new-prog-11.png> <./figures/new/prog/new-prog-12.png>]
+) (./phase.tex [50 <./figures/new/prog/new-prog-13.png>]
+Overfull \hbox (4.39456pt too wide) in paragraph at lines 15--16
 []\T2A/cmr/m/n/10.95 Из пра-ви-ла фаз сле-ду-ет, что в од-но-ком-по-нент-ной си
 -сте-ме ($К$ = 1)
  []
 
-[41] [42] [43] [44] [45] [46] [47] [48] [49]) (./equation.tex [50]
-Missing character: There is no С in font cmr10!
-Missing character: There is no О in font cmr10!
- [51]
-[52] [53]
-Overfull \hbox (0.69748pt too wide) in paragraph at lines 65--67
+[51] <./figures/phase-ideal/phase-id-f1.png, id=303, 178.266pt x 142.131pt>
+File: ./figures/phase-ideal/phase-id-f1.png Graphic file (type png)
+
+<use ./figures/phase-ideal/phase-id-f1.png>
+Package pdftex.def Info: ./figures/phase-ideal/phase-id-f1.png used on input li
+ne 21.
+(pdftex.def)             Requested size: 233.02704pt x 185.8069pt.
+
+<./figures/phase-ideal/phase-id-f2.png, id=304, 1443.3925pt x 960.58875pt>
+File: ./figures/phase-ideal/phase-id-f2.png Graphic file (type png)
+
+<use ./figures/phase-ideal/phase-id-f2.png>
+Package pdftex.def Info: ./figures/phase-ideal/phase-id-f2.png used on input li
+ne 29.
+(pdftex.def)             Requested size: 266.31879pt x 177.23709pt.
+ [52] [53 <./figures/phase-ideal/phase-id-f1.png> <./figures/phase-ideal/phase-
+id-f2.png (PNG copy)>]
+<./figures/phase-ideal/phase-id-f3.png, id=311, 300.3722pt x 354.57469pt>
+File: ./figures/phase-ideal/phase-id-f3.png Graphic file (type png)
+
+<use ./figures/phase-ideal/phase-id-f3.png>
+Package pdftex.def Info: ./figures/phase-ideal/phase-id-f3.png used on input li
+ne 45.
+(pdftex.def)             Requested size: 166.44861pt x 196.4883pt.
+ [54 <./figures/phase-ideal/phase-id-f3.png>]
+<./figures/phase-ideal/phase-id-f4.png, id=315, 2013.5225pt x 684.5575pt>
+File: ./figures/phase-ideal/phase-id-f4.png Graphic file (type png)
+
+<use ./figures/phase-ideal/phase-id-f4.png>
+Package pdftex.def Info: ./figures/phase-ideal/phase-id-f4.png used on input li
+ne 54.
+(pdftex.def)             Requested size: 299.60547pt x 101.85399pt.
+ [55 <./figures/phase-ideal/phase-id-f4.png (PNG copy)>] [56] [57] [58] [59] [6
+0] [61]
+Overfull \hbox (13.93222pt too wide) in paragraph at lines 253--254
+\T2A/cmr/m/n/10.95 жид-ко-стей $\OML/cmm/m/it/10.95 p[]\OT1/cmr/m/n/10.95 (\OML
+/cmm/m/it/10.95 T\OT1/cmr/m/n/10.95 )$\T2A/cmr/m/n/10.95 , ис-поль-зуя урав-не-
+ния Менделеева-Клайперона,
+ []
+
+[62]
+Overfull \hbox (2.35571pt too wide) in paragraph at lines 265--266
+[]\T2A/cmr/m/n/10.95 Используя вы-ра-же-ния для из-бы-точ-ной моль-ной энер-гии
+ Гибб-
+ []
+
+[63]) (./phase_nid.tex) (./equation.tex [64]
+Overfull \hbox (3.34401pt too wide) in paragraph at lines 12--13
+[]\T2A/cmr/m/n/10.95 Оказалось, что для боль-шин-ства ре-аль-ных га-зов, на-при
+-мер $[]$,
+ []
+
+[65] <./figures/eos/eos-vdw.pdf, id=352, 456.70625pt x 345.29pt>
+File: ./figures/eos/eos-vdw.pdf Graphic file (type pdf)
+
+<use ./figures/eos/eos-vdw.pdf>
+Package pdftex.def Info: ./figures/eos/eos-vdw.pdf used on input line 27.
+(pdftex.def)             Requested size: 332.89723pt x 251.69078pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[66] [67 <./figures/eos/eos-vdw.pdf>]
+Overfull \hbox (0.69748pt too wide) in paragraph at lines 73--75
 \T2A/cmr/m/n/10.95 ше-ния дан-ной си-сте-мы урав-не-ний за-клю-ча-ет-ся в опре-
 де-ле-нии плот-
  []
 
-[54]
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []|\T2A/cmr/m/n/10.95 ќ
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 \T2A/cmr/m/n/10.95 Ва-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 \T2A/cmr/m/n/10.95 ри-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 \T2A/cmr/m/n/10.95 ан-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []|$\OML/cmm/m/it/10.95 M$\T2A/cmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
-[]|$\OML/cmm/m/it/10.95 T[]$\T2A/cmr/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []|$\OML/cmm/m/it/10.95 p[]$\T2A/cmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []|$\OML/cmm/m/it/10.95 V[]$\T2A/cmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []|\T2A/cmr/m/n/10.95 Кислород
  []
 
-[55] [56]) (./mass_transfer.tex [57]
+[69] [70]) (./mass_transfer.tex [71]
 Overfull \hbox (1.13141pt too wide) in paragraph at lines 1--2
 []\T2A/cmr/bx/n/10.95 Лабораторная ра-бо-та ќ 7 Про-ект-ный и по-ве-роч-ный рас
 -
@@ -2350,13 +2486,13 @@ Overfull \hbox (1.35889pt too wide) in paragraph at lines 10--15
 а-ет-ся в жид-
  []
 
-[58] <./figures/abs/flowscheme.pdf, id=263, 369.88583pt x 483.69685pt>
+[72] <./figures/abs/flowscheme.pdf, id=396, 369.88583pt x 483.69685pt>
 File: ./figures/abs/flowscheme.pdf Graphic file (type pdf)
 
 <use ./figures/abs/flowscheme.pdf>
 Package pdftex.def Info: ./figures/abs/flowscheme.pdf used on input line 27.
 (pdftex.def)             Requested size: 159.78925pt x 208.95982pt.
- [59] [60]
+ [73] [74]
 Underfull \hbox (badness 3302) in paragraph at lines 57--58
 \T2A/cmr/m/n/10.95 де-ния ис-точ-ни-ка мас-сы, ко-
  []
@@ -2371,50 +2507,75 @@ Underfull \hbox (badness 1082) in paragraph at lines 57--58
 \T2A/cmr/m/n/10.95 де-ния в ма-те-ма-ти-че-скую мо-
  []
 
-[61 <./figures/abs/flowscheme.pdf>] [62] [63]
+[75 <./figures/abs/flowscheme.pdf>] [76] [77]
 Overfull \hbox (1.76076pt too wide) in paragraph at lines 150--151
 []\T2A/cmr/m/n/10.95 Процессы аб-сорб-ции и хе-мо-сорб-ции. Для ре-ше-ния ка-ки
 х прак-
  []
 
-) (./heat_transfer.tex [64] [65]
-Overfull \hbox (9.879pt too wide) in paragraph at lines 50--51
+) (./heat_transfer.tex [78]
+Package epstopdf Info: Source file: <./figures/heat/heat-scheme1.eps>
+(epstopdf)                    date: 2017-11-19 23:37:42
+(epstopdf)                    size: 29210 bytes
+(epstopdf)             Output file: <./figures/heat/heat-scheme1-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2017-11-19 23:38:06
+(epstopdf)                    size: 11513 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/heat/heat-scheme
+1-eps-converted-to.pdf ./figures/heat/heat-scheme1.eps>
+(epstopdf)             \includegraphics on input line 12.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/heat/heat-scheme1-eps-converted-to.pdf, id=424, 1370.11874pt x 442.6
+5375pt>
+File: ./figures/heat/heat-scheme1-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./figures/heat/heat-scheme1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/heat/heat-scheme1-eps-converted-to.pdf used 
+on input line 12.
+(pdftex.def)             Requested size: 332.89723pt x 107.54941pt.
+ [79 <./figures/heat/heat-scheme1-eps-converted-to.pdf>] [80]
+Overfull \hbox (9.879pt too wide) in paragraph at lines 69--70
 []\T2A/cmr/m/n/10.95 Теплоотдача в круг-лых тру-бах при тур-бу-лент-ном ре-жи-м
 е ($\OML/cmm/m/it/10.95 Re >
  []
 
 
-Overfull \hbox (6.48705pt too wide) in paragraph at lines 54--55
+Overfull \hbox (6.48705pt too wide) in paragraph at lines 73--74
 []\T2A/cmr/m/n/10.95 Теплоотдача в круг-лых тру-бах при пе-ре-ход-ном ре-жи-ме 
 ($\OT1/cmr/m/n/10.95 2300 \OML/cmm/m/it/10.95 <
  []
 
-[66]) (./reaction.tex [67] [68] [69] [70] [71] [72] [73]) (./rectification.tex
-[74]
+[81] [82]) (./reaction.tex [83]
+Overfull \hbox (3.77214pt too wide) in paragraph at lines 6--8
+[]\T2A/cmr/m/n/10.95 Основными кри-те-ри-я-ми эф-фек-тив-но-сти про-ве-де-ния х
+и-ми-че-ских
+ []
+
+[84] [85] [86] [87] [88] [89]) (./rectification.tex [90]
 Overfull \hbox (5.41882pt too wide) in paragraph at lines 1--2
 []\T2A/cmr/bx/n/10.95 Лабораторная ра-бо-та ќ 10 Мо-де-ли-ро-ва-ние про-цес-са 
 рек-
  []
 
-[75] <./figures/rect/scheme.png, id=328, 1350.04375pt x 832.10875pt>
+[91] <./figures/rect/scheme.png, id=470, 1350.04375pt x 832.10875pt>
 File: ./figures/rect/scheme.png Graphic file (type png)
 
 <use ./figures/rect/scheme.png>
 Package pdftex.def Info: ./figures/rect/scheme.png used on input line 16.
 (pdftex.def)             Requested size: 332.89723pt x 205.18256pt.
- [76 <./figures/rect/scheme.png>] [77]
+ [92 <./figures/rect/scheme.png>] [93]
 Overfull \hbox (3.27075pt too wide) in paragraph at lines 46--47
 []\T2A/cmr/m/n/10.95 иногда воз-мож-но су-ще-ствен-ное из-ме-не-ние фи-зи-че-ск
 их свойств
  []
 
-<./figures/rect/colomn.pdf, id=336, 336.25626pt x 725.29735pt>
+<./figures/rect/colomn.pdf, id=478, 336.25626pt x 725.29735pt>
 File: ./figures/rect/colomn.pdf Graphic file (type pdf)
 
 <use ./figures/rect/colomn.pdf>
 Package pdftex.def Info: ./figures/rect/colomn.pdf used on input line 52.
 (pdftex.def)             Requested size: 159.78925pt x 344.6637pt.
- [78]
+ [94]
 Underfull \hbox (badness 1048) in paragraph at lines 59--60
 \T2A/cmr/m/n/10.95 при-сва-и-ва-ют но-ме-ра: де-флег-
  []
@@ -2424,19 +2585,20 @@ Underfull \hbox (badness 2762) in paragraph at lines 59--60
 \T2A/cmr/m/n/10.95 си при-ме-ним од-но-на-прав-лен-
  []
 
-[79 <./figures/rect/colomn.pdf>] [80] [81]) (./base.bbl [82]) [83
+[95 <./figures/rect/colomn.pdf>] [96] [97] [98]) [99] (./base.bbl) [100
 
-] (./base.aux
+]
+(./base.aux
 Package cleveref Info: loaded `russian' language definitions on input line 4.
 ) ) 
 Here is how much of TeX's memory you used:
- 32484 strings out of 493029
- 615845 string characters out of 6136234
- 961118 words of memory out of 5000000
- 35306 multiletter control sequences out of 15000+600000
+ 32850 strings out of 493029
+ 623913 string characters out of 6136233
+ 1066215 words of memory out of 5000000
+ 35629 multiletter control sequences out of 15000+600000
  22174 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,17n,78p,10401b,1049s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,17n,78p,10401b,1034s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
@@ -2448,20 +2610,19 @@ s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
-1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0
-800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt10
-95.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on base.pdf (83 pages, 581905 bytes).
+re/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfb
+x1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
+1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sftt1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1
+200.pfb>
+Output written on base.pdf (100 pages, 3187155 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
+ 577 PDF objects out of 1000 (max. 8388607)
+ 326 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 words of extra memory for PDF output out of 10000 (max. 10000000)
 
