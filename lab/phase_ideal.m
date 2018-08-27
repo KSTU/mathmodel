@@ -65,7 +65,7 @@ if(length(arg_list)<2)
 endif
 
 file_id=fopen("phase_ideal.tex","w");
-fprintf(file_id,"\\section{Лабораторная работа №5 <<Определение условий фазовых равновесий пар~-- жидкость>>}\n\n \\addtocounter{nlab}{1}")
+fprintf(file_id,"\\section{Лабораторная работа №~5 <<Определение условий фазовых равновесий пар~-- жидкость>>}\n\n \\addtocounter{nlab}{1}")
 n_eq=rows(equa);
 for ii=1:str2num(arg_list{2})
 	

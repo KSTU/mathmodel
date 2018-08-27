@@ -8,7 +8,7 @@ function z1(id)
 	ai=["a_0","a_1"];
 	fun2_list=["x"; "x^{3.7}"; "\\dfrac{1}{x}"; "x^{1.2}"; "x^{0.3}"; "\\dfrac{x}{1+x}"; "\\dfrac{x^{2.4}}{1+x^2}"; "\\sqrt{x}"];
 	fun3_list=["y(x)=A \\cdot e^{-\\dfrac{B}{x}+C}"; "y(x)=\\dfrac{B+x^C}{A+x}"; "y(x)=B+10^{A+Cx}"; "y(x)=\\dfrac{A x^2 + B x +C}{\\sqrt{x} +D}"; "y(x)=\\dfrac{A x^B} {C+x}"];
-	fun4_list=["кубический\\ сплайн"; "параболический\\ сплайн"]
+	fun4_list=["кубический сплайн"; "параболический сплайн"];
 	A=normrnd(0.2,5);
 	B=normrnd(1,5);
 	C=normrnd(2,5);
@@ -44,15 +44,15 @@ fprintf(id,"В результате измерения зависимости п
 	while((temp1==temp3)&&(temp2==temp3))
 		temp3=ceil(rand()*fun2_num);
 	endwhile
-	fprintf(id,"\\item $y(x)=a_0 %s+a_1 %s +a_2 %s$",fun2_list(temp1,:),fun2_list(temp2,:),fun2_list(temp3,:));
+	fprintf(id,"\\item $y(x)=a_0 %s+a_1 %s +a_2 %s$\n",fun2_list(temp1,:),fun2_list(temp2,:),fun2_list(temp3,:));
 	fun3_num=rows(fun3_list);
 	temp1=ceil(rand()*fun3_num);
-	fprintf(id,"\\item $%s$",fun3_list(temp1,:));
+	fprintf(id,"\\item $%s$\n",fun3_list(temp1,:));
 
 	fun4_num=rows(fun4_list);
 	temp4=ceil(rand()*fun4_num);
 
-	fprintf(id,"\\item $%s$",fun4_list(temp4,:));
+	fprintf(id,"\\item %s\n",fun4_list(temp4,:));
 	fprintf(id,"\\end{itemize}\n")
 %%%%%%%%%%%5
 
@@ -62,7 +62,7 @@ fprintf(id,"В результате измерения зависимости п
 	fprintf(id,"x & y \\\\ \\hline\n")
 
 	func_num=3;
-	func_cur= ceil(rand()*func_num)
+	func_cur= ceil(rand()*func_num);
 	#if(func_cur==1)
 		for ii=1:10
 			cur_x(ii)=xmin+(ii-1)*xdel;
@@ -235,28 +235,30 @@ function z3(id)
 	fprintf(id,"\\end{equation*}\n")
 endfunction
 
-function z4(id)
-	num=odsread('lab2.ods', 'z2', 'A1:A1','OCT');
-	num
-	vvo_range=strcat('A2:A',num2str(num+1));
-	[numarr, vvo, rawarr, limits]=odsread('lab2.ods', 'z2', vvo_range,'OCT');
-	prop_range=strcat('B2:B',num2str(num+1));
-	[numarr, prop, rawarr, limits]=odsread('lab2.ods', 'z2', prop_range,'OCT');
-	max_range=strcat('C2:C',num2str(num+1));
-	[maxr, temps, rawarr, limits]=odsread('lab2.ods', 'z2', max_range,'OCT');
-	min_range=strcat('D2:D',num2str(num+1));
-	[minr, temps, rawarr, limits]=odsread('lab2.ods', 'z2', min_range,'OCT');
-	units_range=strcat('E2:E',num2str(num+1));
-	[numarr, units, rawarr, limits]=odsread('lab2.ods', 'z2', units_range,'OCT');
-
+function z4(id,prop,minr,maxr,units,vvo)
+#	num=odsread('lab2.ods', 'z2', 'A1:A1','OCT');
+#	num
+#	vvo_range=strcat('A2:A',num2str(num+1));
+#	[numarr, vvo, rawarr, limits]=odsread('lab2.ods', 'z2', vvo_range,'OCT');
+#	prop_range=strcat('B2:B',num2str(num+1));
+#	[numarr, prop, rawarr, limits]=odsread('lab2.ods', 'z2', prop_range,'OCT');
+#	max_range=strcat('C2:C',num2str(num+1));
+#	[maxr, temps, rawarr, limits]=odsread('lab2.ods', 'z2', max_range,'OCT');
+#	min_range=strcat('D2:D',num2str(num+1));
+#	[minr, temps, rawarr, limits]=odsread('lab2.ods', 'z2', min_range,'OCT');
+#	units_range=strcat('E2:E',num2str(num+1));
+#	[numarr, units, rawarr, limits]=odsread('lab2.ods', 'z2', units_range,'OCT');
+	
+	
+	
 	temp_rand=ceil(rand()*rows(minr));
-	units{temp_rand}
+	units{temp_rand};
 #	prop(temp_rand,:)
 #	vvo(temp_rand,:)
 #	units(temp_rand,:)
 	cur_prop=minr(temp_rand)+(maxr(temp_rand)-minr(temp_rand))*rand();
 	fprintf(id,"\\textbf{Задание 2} ");
-	fprintf(id," Используя данные из справочника теплофизических свойств подобрать аппроксимирующую функцию для описания %s. Максимальное отклонение не должно превышать 10\\%%. Определить, при какой температуре %s равна $%8.1f %s$.\n\n",prop{temp_rand},prop{temp_rand},cur_prop,units{temp_rand})	#vvo{temp_rand},
+	fprintf(id," Используя данные из справочника теплофизических свойств описать %s %s. В качестве аппроксимирующей функции может выступать любое выражение, однако максимальное отклонение не должно превышать 10\\%%. Определить, при какой температуре %s равна $%8.1f %s$.\n\n",prop{temp_rand}, vvo{temp_rand},prop{temp_rand},cur_prop,units{temp_rand})	#vvo{temp_rand},
 endfunction	
 
 function z5(id)
@@ -294,11 +296,20 @@ if(length(arg_list)<2)
 		break
 	%endif
 endif
+#read data for 4 z
+[vvo prop temp_min temp_max units]=textread( 'lab2.data', '%s %s %f %f %s' ,'delimiter' , '\t' ,1 );
+
 cd results
 file_id=fopen("regression.tex","w");
 fprintf(file_id,"\\section{Лабораторная работа №~2 <<Регрессионный анализ, методы аппроксимации>>}\n\n  \\addtocounter{nlab}{1}")
 #fprintf(file_id,"\\textsc{\\textbf{Группа %s}}\n\n",arg_list{1})
 #fprintf(file_id,"\\input{regression_theory.tex}\n\n")
+
+
+#file_id2=fopen("lab2.data","r");
+
+#fclose(file_id2);
+
 
 for ii=1:str2num(arg_list{2})
 	fprintf(file_id,"\\textsc{\\textbf{Вариант %d}}\n\n",ii)
@@ -307,16 +318,17 @@ for ii=1:str2num(arg_list{2})
 #	z2(file_id)
 #	z3(file_id)
 	cd ..
-	z4(file_id)
+	z4(file_id,prop,temp_min,temp_max,units,vvo)
 	cd results
 	z5(file_id)
+	printf("generated %d\n",ii);
 #	fprintf(file_id,"\\end{enumerate}\n");
 
 endfor
-fprintf(file_id,"\\newpage\n")
+fprintf(file_id,"\\newpage\n");
 fclose(file_id);
 
 
-file_id=fopen("filelist.tex","a")
-fprintf(file_id,"\n\\input{regression.tex}")
-fclose(file_id)
+file_id=fopen("filelist.tex","a");
+fprintf(file_id,"\n\\input{regression.tex}");
+fclose(file_id);

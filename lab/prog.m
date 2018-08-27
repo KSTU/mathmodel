@@ -141,7 +141,7 @@ endif
 cd results
 
 file_id=fopen("prog.tex","w");
-fprintf(file_id,"\\section {Лабораторная работа <<Основы программирования>>}\n\n \\addtocounter{nlab}{1}")
+fprintf(file_id,"\\section {Лабораторная работа №~4 <<Основы программирования>>}\n\n \\addtocounter{nlab}{1}")
 for ii=1:str2num(arg_list{2})
 	fprintf(file_id,"\\textsc{\\textbf{Вариант %d}}\n",ii)
 	fprintf(file_id,"\\begin{enumerate}\n");
