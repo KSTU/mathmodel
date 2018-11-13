@@ -1,3 +1,6 @@
+%
+printf("generate lab #8\n")
+
 function out=z1(id)
 	typstr=[ "прямоточном" "противоточном" ];
 	Rtype=ceil(rand()*3);
@@ -28,7 +31,7 @@ function out=z1(id)
 	ro2=600+1000*rand();
 	mu2=0.1+10.5*rand();
 
-	g2=Re*(mu2*0.001)/(D1*0.001)/ro2*((D1*0.001)^2*pi/4)*ro2*3600
+	g2=Re*(mu2*0.001)/(D1*0.001)/ro2*((D1*0.001)^2*pi/4)*ro2*3600;
 	g1=g2*(0.5+1.3*rand());
 	cp1=1300+3000*rand();
 	la1=0.1+0.5*rand();
@@ -72,7 +75,7 @@ function out=z3(id)
 endfunction
 
 #main programm
-pkg load all
+pkg load io
 arg_list=argv();
 if(length(arg_list)<2)
 	%if((arg_list(1)==null)||(arg_list(2)==null))
@@ -86,6 +89,7 @@ file_id=fopen("heat.tex","w");
 #fprintf(file_id,"\\textsc{\\textbf{Лабораторная работа №8 <<Моделирование теплообменника типа труба в трубе>>}}\n\n")
 fprintf(file_id,"\\section{Лабораторная работа №~8 <<Моделирование теплообменника типа труба в трубе>>}\n\n  \\addtocounter{nlab}{1}")
 for ii=1:str2num(arg_list{2})
+	printf("\tgenerate var %d\n",ii);
 	fprintf(file_id,"\\textsc{\\textbf{Вариант %d}}\n\n",ii);
 	fprintf(file_id,"\\begin{enumerate} \n")
 	z1(file_id)

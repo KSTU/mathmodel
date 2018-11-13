@@ -1,0 +1,192 @@
+\lecture{Лекция 5}{lec5}
+\section{Моделирование теплообменных процессов}
+
+\begin{frame}
+	\frametitle{Теплообмен}
+	Задача: определение поле температуры теплоносителей $T(\tau, x, y, z)$
+	
+	Теплообменник типа труба в трубе:
+	\begin{figure}[h]
+		\includegraphics[width=8cm]{l5-tepl1.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Уравнение теплового баланса}
+Уравнение теплового баланса для первого горячего теплоносителя:
+\begin{equation}
+	\upsilon_1 T_1 \rho_1 c_{p1} S_1 - \upsilon_1 (T_1-dT_1) \rho_1 c_{p1} S_1 -q_{12} dF =0
+\end{equation}
+Элементарный объем: $dV_1=S_1 dx$
+
+Тепловой поток межфазной поверхности:
+\begin{equation}
+	q_{12}=K ( T_1 - T_2 )
+\end{equation}
+K --- коэффициент теплопередачи
+
+\begin{equation}
+	\upsilon_1  \dfrac{ dT_1 }  { dx } = - \dfrac { K (T_1 -T_2)  }  { \rho_1 c_{p1} } \dfrac { d F } { S_1 dx }
+\end{equation}
+$ \dfrac {dF} { d x } = \dfrac { P L } {L} = P$
+, где $P$ --- периметр теплообмена
+\end{frame}
+
+\begin{frame}
+Система уравнений для двух теплоносителей:
+
+\begin{equation}
+\left\lbrace 
+\begin{gathered} 
+\dfrac {dT_1} {dx} = \dfrac {-K (T_1-T_2)} {G_1 c_{p1}} P \\
+\dfrac {dT_2} {dx} = \dfrac {K (T_1-T_2)} {G_2 c_{p2}} P
+\end{gathered} 
+\right.
+\end{equation}
+где $G$ --- массовый расход
+Граничные условия:
+\begin{itemize}
+\item Прямоток (задача Коши)
+$T_1( 0 ) =T_{1 in}$,  $T_2( 0 ) =T_{2 in}$
+\item Противоток (краевая задача)
+$T_1( 0 ) =T_{1 in}$,  $T_1( L ) =T_{1 in}$
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Противоток}
+	Тепловой баланс второго потока в случае противотока:
+	\begin{equation}
+	-\upsilon_2 T_2 \rho_2 c_{p2} S_2 + \upsilon_2 (T_2-d T_2) \rho_2 c_{p2} S_2 +q_{12} dF =0
+	\end{equation}
+	
+	\begin{equation}
+	\left\lbrace 
+	\begin{gathered} 
+	\dfrac {dT_1} {dx} = \dfrac {-K (T_1-T_2)} {G_1 c_{p1}} P \\
+	\dfrac {dT_2} {dx} = \dfrac {-K (T_1-T_2)} {G_2 c_{p2}} P
+	\end{gathered} 
+	\right.
+	\end{equation}
+	
+\end{frame}
+
+\begin{frame}
+\frametitle{Диффузионная модель}
+Уравнение теплового баланса для диффузионной модели:
+%\begin{equation}
+	\begin{multline}
+	\upsilon_1 T_1 \rho_1 c_{p1} S_1 -D_L \dfrac {dT} {dx} S_1 \rho_1 c_{p1} - \upsilon_1 (T_1-dT_1) \rho_1 c_{p1} S_1 + \\   +D_L \dfrac {d(T_1+dT_1)} {dx} S_1 \rho_1 c_{p1}-q_{12} dF =0
+	\end{multline}
+%\end{equation}
+
+\begin{equation}
+\left\lbrace 
+\begin{gathered} 
+\upsilon_1 \dfrac {dT_1} {dx} = D_L1 \dfrac {d^2 T_1} {dx^2} - \dfrac {K(T_1-T_2) P} {\rho_1 c_{p1} S_1} \\
+\upsilon_2 \dfrac {dT_1} {dx} = D_L2 \dfrac {d^2 T_2} {dx^2} + \dfrac {K(T_1-T_2) P} {\rho_2 c_{p2} S_2} 
+\end{gathered} 
+\right.
+\end{equation}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Граничные условия}
+Для решения системы записываются 2 граничных условия для каждого уравнения:
+ 
+$x=0$ ; \quad $\upsilon_1 ( T_{in} - T_1 ) = -D_{L1} \left.  \dfrac { d T_1 } { dx }  \right| _{ x=0 }$
+
+$x=L$ \quad $ \left. \dfrac { d T_1 } { dx }  \right|_{ x=L } =0$
+
+
+\begin{figure}[h]
+	\includegraphics[width=8cm]{l5-gr1.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Противоток}
+	\begin{equation}
+	\left\lbrace 
+	\begin{gathered} 
+	\upsilon_1 \dfrac {dT_1} {dx} = D_L1 \dfrac {d^2 T_1} {dx^2} - \dfrac {K(T_1-T_2) P} {\rho_1 c_{p1} S_1} \\
+	\upsilon_2 \dfrac {dT_1} {dx} = - D_L2 \dfrac {d^2 T_2} {dx^2} - \dfrac {K(T_1-T_2) P} {\rho_2 c_{p2} S_2} 
+	\end{gathered} 
+	\right.
+	\end{equation}
+	Для решения системы записываются 2 граничных условия для каждого уравнения:
+	
+	$x=0$ ; \quad $\upsilon_1 ( T_{in1} - T_1 ) = -D_{L1} \left.  \dfrac { d T_1 } { dx }  \right| _{ x=0 }$
+	
+	$x=L$ \quad $ \left. \dfrac { d T_1 } { dx }  \right|_{ x=L } =0$
+	
+	$x=L$ ; \quad $\upsilon_2 ( T_{in2} - T_2 ) = -D_{L2} \left.  \dfrac { d T_2 } { dx }  \right| _{ x=L }$
+	
+	$x=0$ \quad $ \left. \dfrac { d T_2 } { dx }  \right|_{ x=0 } =0$
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{МИС}
+	Уравнение теплового баланса для МИС:
+	\begin{equation}
+		T_1-T_{in 1}=\dfrac { K(T_1 - T_{P} )F} { G_1 c_{p1} }
+	\end{equation}
+	
+	\begin{figure}[h]
+		\includegraphics[width=5cm]{l5-mis.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ячеечная модель}
+	Уравнение теплового баланса для ячеечной модели:
+	\begin{equation}
+		G c_p ( T_{1,j} - T_{1,j-1} ) = K_j \dfrac {F} {m} ( T_P - T_{1,j} ) \quad j=1,m
+	\end{equation}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Сравнение различных моделей}
+	\begin{figure}[h]
+	\includegraphics[width=10cm]{l5-models.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Коэффициент теплопередачи}
+	\begin{equation}
+		K = \dfrac {q}  { F \Delta T }
+	\end{equation}
+	\begin{equation}
+		K = \dfrac {1} { 1 over {\alpha_1} + \sum{\dfrac {\delta} {\lambda}} + \dfrac {1} {\alpha_2} }
+	\end{equation}
+	, где $\alpha$ --- коэффициент теплоотдачи
+	
+	Коэффициент теплоотдачи зависит от:
+	\begin{itemize}
+		\item Режима течения $Re$, (скорость, вязкость, форма аппарата)
+		\item Теплофизических свойств $Pr$ (теплоемкость, теплопроводность …)
+		\item Геометрии аппарата
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	Коэффициент теплоотдачи:
+	\begin{equation}
+		Nu = \dfrac { \alpha l } {\lambda}
+	\end{equation}
+	Если движение в трубе (канале) носит характер переходного режима, т.е. $Re = 2300 - 10000$, то критерий Нуссельта:
+	
+	Для ламинарного движения ( Re < 2300):
+	
+	$Nu = 0.08 Re^{0.9} Pr^{0.43}$
+	
+	Для ламинарного движения ( Re < 2300):
+	$Nu =a ( Re Pr )^{0.2} ( Gr Pr )^{0.1}$
+	где $a$ --- множитель (для горизонтальных труб d = 0,74; для вертикальных труб a= 0,85)
+\end{frame}

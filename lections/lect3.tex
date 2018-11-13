@@ -1,0 +1,687 @@
+\lecture{Лекция 3}{lec3}
+	\section{Теоретический метод построения математических моделей}
+	
+\begin{frame}
+	\frametitle{Область применения}
+	\begin{itemize}
+	\item Законы сохранения массы, импульса, энергии (уравнения балансов). (статика)
+	\item Законы переноса массы, энергии, импульса и законы химической кинетики. (кинетика)
+	\item Законы термодинамики. Связывают воздействие на вещество с его свойствами. Термодинамические свойства, условия равновесия, кинетические (теплофизические свойства)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Законы сохранения}
+\begin{itemize}
+	\item Интегральная форма (применительно ко всей системе)
+	\item Дифференциальная/локальная форма (применительно к элементарным объемам)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Закон сохранения массы}
+Интегральная форма:
+\begin{equation}
+	m_i^{вх} - m_i^{вых} =r_i
+\end{equation}
+Если нет химической реакции:
+\begin{equation}
+m_i^{вх} = m_i^{вых} 
+\end{equation}
+
+Локальная форма:
+\begin{equation}
+	\dfrac{\partial m} {\partial t} =r
+\end{equation}
+Уравнение неразрывности:
+\begin{equation}
+\dfrac{\partial \rho} {\partial t} + \nabla(\rho \upsilon) =r
+\end{equation}
+где $\rho$ --- плотность, $\upsilon$ --- скорость движения среды.
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Закон сохранения энергии}
+Интегральная форма:
+\begin{equation}
+ \dfrac{d E} {d t} =0
+\end{equation}
+$E$ --- полная энергия.
+
+Первый закон термодинамики:
+\begin{equation}
+	d U = \delta Q -p dV
+\end{equation}
+$U $ --- внутренняя энергия системы.
+Теплообмен при постоянном объеме:
+\begin{equation}
+	d U = \delta Q = c_v dT
+\end{equation}
+$c_V$ --- изохорная теплоемкость
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Закон сохранения энергии}
+При теплообмен при постоянном давлении удобно использовать энтальпию:
+\begin{equation*}
+	H =U +pV
+\end{equation*}
+\begin{equation*}
+	d H = d U +p d V +V d p
+\end{equation*}
+\begin{equation*}
+	d H = \delta Q +V d p
+\end{equation*}
+\begin{equation*}
+	\delta Q = d H = c_p dT
+\end{equation*}
+\begin{equation*}
+  Q = H_1 - H_2 = c_p (T_1 - T_2)
+\end{equation*}
+$c_p$ --- изобарная теплоемкость
+
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[h]
+		\includegraphics[width=6cm]{l3-t1.png}
+	\end{figure}	
+	
+	\begin{equation*}
+		G_1 c_{p1}(T_{1н}-T_{1k})=G_2 c_{p2}(T_{2н}-T_{2k})
+	\end{equation*}
+	$G$ --- массовый расход
+	\begin{equation*}
+	G_1 c_{p1}(T_{1н}-T_{1k})=G_2 c_{p2}(T_{2н}-T_{2k})+Q_r
+	\end{equation*}
+	$Q_r$ --- внутренний источник/сток тепла
+	
+	Уравнение Бернулли:
+	\begin{equation*}
+		\dfrac{\rho \upsilon}{2} + \rho g h + z = const
+	\end{equation*}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Закон сохранения импульса}
+	\begin{equation}
+	\dfrac{d \vec{p}}{d t }=0
+	\end{equation}
+	Уравнение Навье-Стокса:
+	\begin{equation}
+	\dfrac{\partial \vec{\upsilon}}{\partial t} = - (\vec{\upsilon} \nabla) \vec{\upsilon} +\nu \Delta \vec{\upsilon} - \dfrac{1}{\rho} \nabla p = \vec{f}
+	\end{equation}
+	$\upsilon$ --- поле скорости, $\nu$ --- кинематическая вязкость, $f$ --- поле внешних сил
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Законы переноса}
+	\begin{itemize}
+	\item Молекулярный перенос субстанции (энергии, массы, импульса) – перенос за счет теплового движения молекул
+	\item Конвективный перенос – перенос за счет движения среды как единого целого
+	\item Турбулентный перенос – перенос за счет турбулентных пульсаций (вихрей)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Молекулярный перенос}
+	Поток массы:
+	\begin{equation}
+		\vec{j_i} = -D_{ij}\nabla c_i
+	\end{equation}
+	$D$ --- коэффициент диффузии, $с$ --- концентрация компонента $i$
+	
+	Поток тепла:
+	\begin{equation}
+	\vec{q} = -\lambda\nabla T
+	\end{equation}
+	$\lambda$ --- коэффициент теплопроводности
+	
+	Поток импульса:
+	\begin{equation}
+	\tau_{xy} = -\mu \dfrac{d \upsilon_x}{d y}
+	\end{equation}
+	$\mu$ --- коэффициент вязкости
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Конвективный механизм}
+	Поток массы:
+	\begin{equation}
+		\vec{j_i} = c_i \vec{\upsilon}
+	\end{equation}
+	Поток тепла:
+	\begin{equation}
+		\vec{q} = \rho c_p T \vec{\upsilon}
+	\end{equation}
+	Поток импульса:
+	\begin{equation}
+		\tau_{xy} = \rho  \upsilon_x \upsilon_y
+	\end{equation}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Турбулентный перенос}
+	Поток массы:
+	\begin{equation}
+	\vec{j_i} = -D_{T}\nabla c_i
+	\end{equation}
+	Поток тепла:
+	\begin{equation}
+	\vec{q} = -\lambda_T \nabla T
+	\end{equation}
+	Поток импульса:
+	\begin{equation}
+	\tau_{xy} = -\mu_T \dfrac{d \upsilon_x}{d y}
+	\end{equation}
+	$D=f(T,p,x)$ $D_T=f(T,p,x,\upsilon)$
+	
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Скорость химической реакции}
+$v_A A + v_B B \rightarrow v_C C$
+
+$2 H_2 + O_2 \rightarrow  2 H_2 O$
+
+Скорость гомогенной реакции:
+	\begin{equation}
+		r_A = \dfrac{1}{V} \dfrac{d N_A}{d t}
+	\end{equation}
+Скорость гетерогенной реакции:
+	\begin{equation}
+		r_A = \dfrac{1}{F} \dfrac{d N_A}{d t}
+	\end{equation}
+	
+	$r_A \ne r_B \ne r_C$
+\end{frame}
+
+\begin{frame}
+\frametitle{Уравнения формальной кинетики}
+Скорость химической реакции:
+\begin{equation}
+r_A = k c_A^{n_A}
+\end{equation}
+$k$ --- константа скорости, $n_i$ --- порядок реакции по компоненту $i$
+
+Уравнение Аррениуса:
+\begin{equation}
+k=k_0 \exp \left( \dfrac{-E_A}{k_B T} \right)
+\end{equation}
+
+$k_0$ --- предэкспоненциальный множитель, $E_A$ --- энергия активации
+\end{frame}
+
+\begin{frame}
+\frametitle{Исчерпывающее описание}
+\begin{itemize}
+\item Уравнения сохранения
+\item Уравнения переноса
+\item Начальные условия (в начальный момент времени или на входе в аппарат)
+\item Граничные условия (условия на стенках аппарата и т. д.)
+\item Форма аппарата
+\item Свойства веществ (более 70\% исходных данных) 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Законы термодинамики и термодинамического равновесия}
+
+\begin{equation}
+d U = TdS - pdV + \sum_{i=1}^{n} \mu_i d N_i
+\end{equation}
+$S$ --- энтропия, $\mu$ --- химический потенциал, $N$ --- количество вещества (молей)
+\begin{equation}
+U = TS - pV + \sum_{i=1}^{n} \mu_i N_i
+\end{equation}
+
+\begin{equation}
+d U = T dS + S dT - p dV - V dp + \sum_{i=1}^{n} \mu_i d N_i + \sum_{i=1}^{n}  N_i d \mu_i
+\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+Соотношение Гиббса-Дюгема:
+\begin{equation}
+S dT -V dp + \sum_{i=1}^{n} N_i d \mu_i =0
+\end{equation}
+При $p=const$, $T=const$:
+\begin{equation}
+\sum_{i=1}^{n} N_i d \mu_i =0
+\end{equation}
+\begin{equation}
+\sum_{i=1}^{n} x_i d \mu_i =0
+\end{equation}
+
+
+\end{frame}
+
+
+\begin{frame}
+
+V,T,N
+\begin{equation}
+F=U-TS=\sum \mu N -pV
+\end{equation}
+\begin{equation*}
+d F=-S dT -p dV + \sum \mu dN 
+\end{equation*}
+P,T,N
+\begin{equation}
+G=U-TS+pV=\sum \mu N 
+\end{equation}
+\begin{equation*}
+d G=-S dT -V dp + \sum \mu dN 
+\end{equation*}
+P,S,N
+\begin{equation}
+H=U+pV=TS +\sum \mu N 
+\end{equation}
+\begin{equation*}
+d H=T dS +V dp + \sum \mu dN 
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Соотношения Максвелла}
+
+\begin{equation}
+\mu_i=\left.\dfrac{\partial U}{\partial N_i} \right|_{S,V,N} = \left.\dfrac{\partial F}{\partial N_i} \right|_{V,T,N} = \left.\dfrac{\partial G}{\partial N_i} \right|_{p,T,N}=\left.\dfrac{\partial H}{\partial N_i} \right|_{S,p,N}
+\end{equation}
+
+\begin{equation}
+	p=-\left.\dfrac{\partial F}{\partial V}\right|_{T,N}=-\left.\dfrac{\partial U}{\partial V}\right|_{S,N}
+\end{equation}
+Уравнение состояния:
+\begin{equation}
+p=f(T,V,N_1,N_2,..., N_n)
+\end{equation}
+\begin{equation}
+p=f(T,V,x_1,x_2,..., x_{n-1})
+\end{equation}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Уравнения состояния}
+Идеального газа:
+\begin{equation}
+	pV=NRT
+\end{equation}
+\begin{figure}[h]
+	\includegraphics[width=7cm]{l3-phase.pdf}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Уравнения состояния}
+Уравнение Ван-дер-Ваальса:
+\begin{equation}
+p=\dfrac{RT}{V_M -b}-\dfrac{a}{V_M^2}
+\end{equation}
+$V_M$ --- молярный объем; $a$ --- параметр, учитывающий притяжение молекул; $b$ --- параметр, учитывающий размер молекул.
+
+\begin{figure}[h]
+	\includegraphics[width=4cm]{l3-vdw.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Условия поведения в критической точке}
+\begin{equation*}
+	\dfrac{\partial  p(T,V_M)}{\partial V_M}=0
+\end{equation*}
+\begin{equation*}
+\dfrac{\partial^2  p(T,V_M)}{\partial V_M^2}=0
+\end{equation*}
+
+
+Критические свойства по уравнению Ван-дер-Ваальса
+\begin{equation*}
+	V_c=3b
+\end{equation*}
+\begin{equation*}
+	p_c = \dfrac{a}{27 b^2}
+\end{equation*}
+\begin{equation*}
+	T_c=\dfrac{8 a}{27 R b}
+\end{equation*}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Теория соответственных состояний}
+\begin{figure}[h]
+	\includegraphics[width=8cm]{l3-phase2.png}
+\end{figure}
+$p^*=\dfrac{p}{p_c}$;
+$T^*=\dfrac{T}{T_c}$;
+$V_M^*=\dfrac{V_M}{V_c}$;
+$p^*=\dfrac{8T^*}{3V_M^*-1}-\dfrac{3}{V_M^{*2}}$
+
+
+\end{frame}
+
+
+\begin{frame}
+Уравнение состояния Редлиха-Квонга:
+\begin{equation}
+p=\dfrac{RT}{V_M -b}-\dfrac{a}{T^{0.5} V_M (V_M+b)}
+\end{equation}
+
+Уравнение Бенедикта-Вэбба-Руббина:
+\begin{equation}
+	p= RT \rho + \left( B_0 RT - A_0 - \dfrac{C_0} {T^2} \right) \rho^2 - (b RT -a )\rho^3+a \alpha \rho^6 + 
+	\dfrac { c \rho^3 }  {T^2} ( 1+\gamma \rho^2 ) exp ( - \gamma \rho^2 )
+\end{equation}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Уравнение состояния воды}
+\begin{figure}[h]
+	\includegraphics[width=10cm]{l3-wagner.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Вириальное уравнение состояния:}
+\begin{equation}
+	p=\dfrac{RT}{V_M}+ B_2(T) \dfrac{1}{V_M^2}+B_3(T) \dfrac{1}{V_M^3} + ...
+\end{equation}
+
+B – вириальный коэффициент
+\end{frame}
+
+\begin{frame}
+\frametitle{Параметры смешения}
+$a_m=f_1(x_1,x_2,x_3,...,x_{n-1})$ \quad
+$b_m=f_2(x_1,x_2,x_3,...,x_{n-1})$
+
+\begin{equation}
+	a_m=\sum_{i=1}^{n} x_i a_i^k
+\end{equation}
+
+<<геометрические>> параметры
+\begin{equation}
+	a_{ij}=\eta \dfrac{a_i+ a_j}{2}
+\end{equation}
+
+<<энергетические>> параметры
+\begin{equation}
+	a_{ij}=\zeta \sqrt{a_i a_j}
+\end{equation}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Условия равновесия фаз}
+$T'=T''$
+
+$p'=p''$
+
+$\mu_1'=\mu_1''$
+
+$\mu_2'=\mu_2''$
+
+Правило фаз Гиббса:
+\begin{equation}
+	C=n-\Phi+2
+\end{equation}
+
+$C$ --- число степеней свободы,$ n$ --- количество компонентов, $\Phi$ --- количество фаз
+\end{frame}
+
+\begin{frame}
+$\mu=\dfrac{G}{N}$
+
+$\dfrac{\partial G}{\partial p} = V$
+
+$\int_{\mu_0}^{\mu_1} d \mu = \dfrac{1}{N} \int_{p_0}{p} V dp $
+
+Для идеального газа:
+$\mu( T,p ) -\mu_0( T,p_0 )=RT \int_{p_0}^p \dfrac {1}{p} dp = RT ln( p / p_0 )$
+
+Химический потенциал идеального газа:
+$\mu( T ) =\mu_0( T )+ RT ln( p )$
+Химический потенциал смеси идеальных газов:
+$\mu_i( T,P,x ) =\mu_{i0}( T )+ RT ln( p_i )=\mu_{i0}( T )+ RT ln( p x_i )$
+\end{frame}
+
+\begin{frame}
+\frametitle{Реальный газ}
+фугитивность (летучесть) чистого вещества:
+$f=p \gamma_f$
+
+фугитивность смеси:
+$f_i= p \gamma_i$
+,где $\gamma$ --- коэффициент фугитивности
+
+$\mu( T, p ) =\mu^0( T )+ RT \ln( f )$
+
+химический потенциал газовой фазы:
+$\mu_i( T, p,x ) =\mu^0_i( T )+ RT \ln( f_i )$
+
+химический потенциал жидкой фазы:
+$\mu_i( T, p,x ) =\mu^0_i( T,P )+ RT \ln( a_i )=\mu^0_i( T,P )+ RT \ln( \gamma_i x )$
+\end{frame}
+
+\begin{frame}
+	$F=\mu N -pV$
+	
+	$\ln( f )=\ln( p \gamma_f ) = \dfrac { \mu -\mu^0 } {RT} = \dfrac{ F-F^0 } { NRT } + \dfrac{ pV- (pV)^0 } {NRT}$
+	
+	$pV=Z_V N R T$, где $Z_V =f( T, V )$ --- фактор сжимаемости
+	
+	$p= - \left. \dfrac{ \partial F } { \partial V }  \right|  _{ T,N_i }$
+	
+	$F-F^0=-NRT \int_{V_0}^V \dfrac{Z_V}{V} dV=-NRT \left( \int_\infty^V {\dfrac{Z_V-1}{V} dV} +{\int_{V_0}^V {\dfrac{1} {V} dV}}   \right)$
+	
+	$F-F^0=-NRT \int_{V_0}^V \dfrac{Z_V}{V} dV=-NRT \left( \int_\infty^V {\dfrac{Z_V-1}{V} dV} +\ln \dfrac{Z_V}{p}  \right)$
+	
+		
+\end{frame}
+
+\begin{frame}
+
+$\ln( \gamma_f ) = ( Z_V -1 ) - \int_\infty^V { \dfrac{Z_V -1} {V} dV } -ln( Z_V )$
+
+$Z_V = \dfrac{p(T,V) V} { N R T}$
+
+для многокомпонентной смеси:
+$\ln( \gamma_{f_i} ) = -\int_\infty^ V \left( \dfrac{1-x_i}{RNT} \left. \dfrac{\partial p}{\partial x_i}  \right|_{V,T} - \dfrac{1} {V}   \right ) dV - \ln( Z_V )$
+
+$\underbrace{\mu^0_i(T)+RT \ln(f_i)}_ {vapor} = \underbrace{\mu^0_i(T,P)+RT \ln(a_i)}_{liquid} $
+
+
+$y_i=\dfrac{ f_i^0 \gamma_i x_i } { \gamma_{f_i} p  }$
+
+$x$ --- доля компонента в жидкости, $y$ --- доля компонента в паре.
+
+$y_i=m x_i$
+
+\end{frame}
+
+
+\begin{frame}
+
+	\begin{equation}
+	\left\lbrace 
+	\begin{gathered} 
+	p^{I}(T,x_1,x_2,...,x_{n-1})=p^{II}(T,y_1,y_2,...,y_n-1),\\
+	y_i=\dfrac{ f_i^0 \gamma_i x_i } { \gamma_{f_i} p  } \quad i=1..n \\
+	\sum y =1
+	\end{gathered} 
+	\right.
+	\end{equation}
+Определение фазового состава:	
+	\begin{equation}
+	\left\lbrace 
+	\begin{gathered} 
+	y_i=\dfrac{ f_i^0 \gamma_i x_i } { \gamma_{f_i} p  } \quad i=1..n \\
+	\sum y =1
+	\end{gathered} 
+	\right.
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Критерии моделей расчета физико-химических свойств}
+	\begin{itemize}
+		\item Выдавать надежные результаты для чистых веществ и их смесей во всей области состояний
+		\item Адекватно воспроизводить фазовое состояние
+		\item Требовать минимальное количество экспериментальных данных
+		\item Обладать невысокой вычислительной трудоемкостью
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Расчет термодинамических свойств на основе избыточных функций}
+	Функция смешения:
+	\begin{equation}
+		A^M ( p, T, x_1 , x_2 , ... , x_{n-1} )=A( p,T, x_1 , x_2 , ... , x_{n-1} )- \sum_{i=1}^n x_i A_i^0 ( T,p )
+	\end{equation}
+		
+	Энергия Гиббса смешения:
+	\begin{equation}
+		\dfrac{G^M} {NRT} = \dfrac{ \sum x_i \mu_i -\sum x_i \mu_i^0 } { RT} = \sum x_i \ln( x_i \gamma_i )
+	\end{equation}
+	
+	
+	Избыточная функция:
+	\begin{equation}
+		A^E ( p, T, x_1 , x_2 , ... , x_{n-1} )=A^M( p,T, x_1 , x_2 , ... , x_{n-1} )- A^M_{id}( p,T, x_1 , x_2 , ... , x_{n-1} )
+	\end{equation}
+	
+\end{frame}
+
+\begin{frame}
+	Избыточная энергия Гиббса:
+\begin{equation}
+\dfrac {G^E}{NRT} = { \sum x_i ln(x_i \gamma_i) - \sum x_i }  = \sum x_i \ln( \gamma_i )
+\end{equation}
+Требования для модели избыточной энергии Гиббса:
+\begin{itemize}
+\item Асимптотика поведения $G^E=0$ при $x_1=0$ и $x_2=0$
+\item Соблюдение уравнения Гиббса-Дюгема $S dT - V dp + \sum_{ i=1}^n N_i d \mu_i =0$
+
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[h]
+		\includegraphics[width=9cm]{gibbsE.jpg}
+	\end{figure}
+	
+	Excess Gibbs’ Free energy  with mole fraction for 1-iodobutane + benzene ($\square$), 1-iodobutane + toluene ($\circ$), 1-iodobutane + o-xylene ($\triangle$), 1-iodobutane + m-xylene ($\nabla$), 1-iodobutane + p-xylene ($\diamond$), and 1-iodobutane + mesitylene  at 308.15 K.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Модели активности}
+	Модель Маргулиса:
+	
+	$\dfrac{G^E}{NRT} = A_{12} x_1 x_2$
+	$\ln( \gamma_1 )=A_{12} x_2^2$
+	$\ln( \gamma_2 )=A_{12} x_1^2$
+	
+	Модель Вильсона:
+	
+	$\dfrac{G^E} {NRT} = -\sum_{i=1}^k x_i \ln( \sum_{j=1}^k x_i \lambda_{ij} ) $
+	$\lambda_{ij} = \dfrac {V_j}{V_i} e^{ \dfrac{-C_{ij}} {RT} }$
+	$\ln( \gamma_i )=1-\ln \left( \sum_{j=1}^k x_j \lambda_{ij} \right) - \sum_{m=1}^k \left(  \dfrac{x_m \lambda_{mi}}{\sum_{j=1}^k x_j \lambda_{mj} } \right)$
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Unifac}
+	UNIQUAC Functional-group Activity Coefficients
+	
+	\begin{figure}[h]
+		\includegraphics[width=9cm]{l3-unifaq.jpg}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Аппроксимация давления насыщенных паров}
+	Соотношение Клапйерона-Клаузиуса:
+	
+	$\dfrac{\partial p^0( T )} { \partial T } = \dfrac{ \Delta H } { T \Delta V }$
+	$ \Delta H = H_V -H_L$
+	$ \Delta V = V_V -V_L$
+	
+	$\dfrac{\partial \ln( p^0( T ))} { \partial T } = \dfrac{ \Delta H } { R \Delta Z_V }$
+	
+	Уравнение Клапейрона:
+	 $\ln( p^0( T ))  = A + \dfrac{B} {T}$
+	 
+	 Уравнение Антуана:
+	 $ \ln( p^0( T ))  = A - \dfrac{B} {C+T}$
+	 
+	 Уравнение Риделя:
+	 $ \ln( p^0( T ))  = A - \dfrac{B} {T} + C \ln( T ) + D T^E$
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Известно $x_1$-$x_n,$ T }
+	\begin{itemize}
+		\item Для заданной температуры рассчитываются давления паров чистых компонентов $p^0_i$ , например по уравнению Антуана
+		\item Для заданного состава и температуры рассчитываются коэффициенты активности по выбранной модели. Несмотря на то, что коэффициенты активности зависят от состава, температуры и давления, на практике используются модели не учитывающие влияние давления
+		\item Рассчитывают парциальные давления компонентов смеси $p_i = p_i^0( T ) /\gamma_i x_i$. И полное давление в системе: $p= \sum p_i$
+		\item Определяют равновесные концентрации в паровой фазе: $y_i = \dfrac{p_i} {p}$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Известно $x_1$-$x_n$, $p_{cur}$ }
+	\begin{itemize}
+		\item Задается начальное приближение по температуре
+		\item Проводятся расчеты по первым трем пунктам предыдущего алгоритма до выполнения условия $p=p_{cur}$
+		\item При невыполнении условия изменяют приближение температуры и делают новую итерацию
+		\item Определяют равновесные концентрации в паровой фазе: $y_i = \dfrac {p_i} {p}$
+		
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Химическое равновесие}
+	$v_A A +v_B B \leftrightarrow v_C C$
+	
+	Химическое сродство:
+	$C=v_A \mu_A +v_B \mu_B -v_c \mu_C $
+	
+	$v_A (\mu^0_A(T) +RT \ln(a_A)) v_B (\mu^0_B(T) + RT \ln(a_B)) -v_C (\mu^0_C(T) +RT \ln(a_C))  =0$
+	
+	$\dfrac { a_C^{v_C} } { a_A^{v_A} a_B^{v_B} } = exp( v_A \mu_A^0 +v_B \mu_B^0 -v_c \mu_C^0 )=K( T )$
+	
+	Вариант 2
+	
+	$r_1=k_1 c_A c_B$
+	
+	$r_2=k_2 c_C$
+	
+	$r_1=r_2=k_2 c_C=k_1 c_A c_B$
+	
+	$K( T )=\dfrac {k_1} {k_2}$
+\end{frame}

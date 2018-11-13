@@ -1,0 +1,345 @@
+\lecture{Лекция 4}{lec4}
+	\section{Теоретический метод построения математических моделей}
+	
+\begin{frame}
+	\frametitle{Поле скорости}
+	
+	\begin{figure}[h]
+		\includegraphics[width=9cm]{l4-struct.png}
+	\end{figure}
+\end{frame}	
+
+\begin{frame}
+	\frametitle{Элементарная ячейка}
+	
+	\begin{figure}[h]
+		\includegraphics[width=9cm]{l4-box.png}
+	\end{figure}
+\end{frame}	
+
+
+
+\begin{frame}
+	\frametitle{Материальный баланс}
+	Уравнение материального баланса для выделенного объема:
+	\begin{equation}
+		j dS +j_{12} dS -( j+d j )dS -r_i dV = \dfrac { \partial C_i }  { \partial \tau } dV
+	\end{equation}
+	где $r_i=k \sum_i C_i^{n_i}$ --- скорость химической реакции
+	\begin{equation}
+		\dfrac { \partial C_i } { \partial \tau } + \dfrac { \partial j_i } { \partial x } = j_{12} \dfrac { dS } { dV  } - r_i
+	\end{equation}
+	
+	Поток массы при конвективном и молекулярном механизме запишется в виде:
+	\begin{equation}
+		j_i = \upsilon C_i -D \dfrac{ d C_i } { d x }
+	\end{equation}
+	
+	Межфазный поток запишется в виде:
+	\begin{equation}
+		j_{12} = K ( C_i - C_i^* )
+	\end{equation}
+\end{frame}	
+
+\begin{frame}
+	\begin{equation}
+	\dfrac { \partial C_i } { \partial \tau } + \upsilon \dfrac { \partial C_i }  { \partial x } = D \dfrac { \partial ^2 C_i } {\partial { x^2 }} + K a ( C_i - C_i^* ) - k \sum C_i^n
+	\end{equation}
+	где $a=\frac{d S}{d V}$ --- удельный объем, $i = K a ( C_i - C_i^* ) -k C_i^n$ --- источник/сток массы.
+	
+	Диффузионная модель:
+	\begin{equation}
+	\dfrac { \partial C_i } { \partial \tau } + \upsilon \dfrac { \partial C_i } { \partial x } = D_L \dfrac{ \partial ^2 C_i } {partial { x^2 }}+ i_i
+	\end{equation}
+	где $D_L$ --- коэффициент обратного перемешивания.
+	
+	
+\end{frame}	
+
+\begin{frame}
+	В стационарных условиях:
+	\begin{equation}
+		\upsilon \dfrac{ \partial C_i } { \partial x } = D_L \dfrac { \partial ^2 C_i } {\partial { x^2 }}+ i_i
+	\end{equation}
+	
+	Начальные и граничные условия:
+	$C_{0i} = C_i( \tau_0 , x )$
+	
+	$\upsilon ( C_i -C_{in} ) = -D_L \left. \dfrac {d C_i} {dx} \right| _ { x=0 }$
+	
+	$\left. \dfrac {dC_i} {dx} \right| _ { x=L } =0$
+	
+	
+	\begin{figure}[h]
+		\includegraphics[width=5cm]{l4-bound.png}
+	\end{figure}
+\end{frame}	
+
+\begin{frame}
+	Безразмерные переменные
+	$X= \dfrac {x} {L}$
+	
+	$\bar \tau = \dfrac {V_ap} {G} = \dfrac { S L }  { S \upsilon } = \dfrac {L} {\upsilon}$
+	
+	$\theta= \dfrac { \tau } { \bar{\tau} }$
+	
+	\begin{equation}
+		\dfrac {\partial C_i} {\partial \theta } + \dfrac{ \partial C_i } { \partial X } = \dfrac {1}  { Pe_L } \dfrac { \partial^2 C_i }  { \partial X } + i \bar{\tau}
+	\end{equation}
+	
+		
+		
+	Двухпараметрическая диффузионная модель
+	\begin{equation}
+		\dfrac{ \partial C_i } { \partial \tau } + \upsilon \dfrac{ \partial C_i } { \partial x } = D \dfrac { \partial ^2 C_i } {\partial { x^2 }} D_R \left( \dfrac{\partial ^2 C_i}{\partial r_i^2}+ \dfrac {1} {r} \dfrac {\partial C_i} {\partial r} \right)+i
+	\end{equation}
+	
+\end{frame}
+
+\begin{frame}
+	Начальные и граничные условия:
+	$\upsilon ( C_i -C_{in} ) = -D_L \left. \dfrac {d C_i} {dx} \right| _ { x=0 }$
+	
+	$\left. \dfrac {dC_i}{dr} \right| _ { x=0 } =0$
+	
+	$\left. \dfrac { dC_i} {dx} \right| _ { x=L } =0$
+	
+	$\left. \dfrac {dC_i} {dr} \right| _ { x=L } =0$
+	
+	
+	\begin{figure}[h]
+		\includegraphics[width=5cm]{l4-bound2.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Модель идеального вытеснения (МИВ)}
+	\begin{equation}
+		\dfrac{ \partial C_i } { \partial \tau } + \upsilon \dfrac { \partial C_i } { \partial x } = i_i
+	\end{equation}
+	Начальные и граничные условия:
+	$C_{0i} = C_i( \tau_0 , x )$, $C=C_{in}$
+	
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Модель идеального смешения (МИС)}
+
+	\begin{equation}
+	\dfrac { \partial C_i }  { \partial \tau } + \dfrac {C_i - C_{in}} { \bar{\tau} } = i_i
+	\end{equation}
+	
+	Стационарный режим:
+	\begin{equation}
+		\dfrac {C_i - C_{in}} { \bar{\tau} } = i_i
+	\end{equation}
+		
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ячеечная модель}
+	\begin{figure}[h]
+		\includegraphics[width=8cm]{l4-cells.png}
+	\end{figure}
+	
+	\begin{itemize}
+		\item В каждой ячейке структура идеального смешения
+		\item Перемешивание между ячейками отсутствует
+		\item Объемный расход не изменяется
+		\item Объемы ячеек одинаковые
+		\item Сумма объемов ячеек равна объему аппарата
+		\item Среднее время пребывания в ячейке $\bar{\tau}_j = \dfrac{\bar{\tau}} {m}  $
+		\item Среднее пребывание в системе $\bar{\tau} =\dfrac{ V_ап } { \dot{V} }$
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\begin{equation}
+	\left\lbrace 
+	\begin{gathered} 
+	\dfrac { \partial C_1 } {\partial \tau} + \dfrac{C_{in} - C_1} {\bar{\tau_1}} =i_1  \\
+	\dfrac { \partial C_2 } {\partial \tau} + \dfrac{C_{in} - C_2} {\bar{\tau_2}} =i_2 \\
+	... \\
+	\dfrac { \partial C_n } {\partial \tau} + \dfrac{C_{in} - C_n} {\bar{\tau_n}} =i_n
+	\end{gathered} 
+	\right.
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Импульсный ввод индикатора для определения параметров типовых и комбинаторных моделей}
+	
+	
+	\begin{figure}[h]
+		\includegraphics[width=9cm]{l4-cout.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	Функция распределения частиц по времени пребывания:
+	\begin{equation}
+		f( \tau ) = \dfrac{ dN (\tau) } { N dt } = \dfrac {C( \tau )} { \int_0^\infty C(\tau) d \tau }
+	\end{equation}
+	$dN(\tau)$ --- количество элементов потока, время пребывания которых составляет от $\tau$ до $\tau + d \tau$; $N $ --- общее количество элементов.
+	
+	$\int_0^\infty f( \tau ) d \tau = 1$
+
+	$\int_0^\infty C( \tau ) d \tau = m$
+\end{frame}
+
+\begin{frame}
+	Общий вид начальных моментов:
+	\begin{equation}
+		M_n = \int_0^\infty \tau^n f( \tau ) d \tau
+	\end{equation}
+	Общий вид центральных моментов:
+	\begin{equation}
+		\mu_n=\int_0^\infty ( \tau - \bar{\tau} )^n f( \tau)d\tau
+	\end{equation}
+	\begin{equation}
+		\sigma^2= \mu_2=\int_0^\infty (\tau - \bar{\tau} )^2 f(\tau)d\tau
+	\end{equation}	
+		
+	Безразмерный вид:
+	$\theta = \dfrac{\tau} {\bar{\tau}}$
+	
+	$f^*(\theta ) = \bar{\tau} f(\tau )$
+	
+	$\sigma_\theta^2=\dfrac{\sigma^2} {\bar{\tau} }^2$
+	
+\end{frame}
+
+\begin{frame}
+	Ячеечная модель:
+	\begin{equation}
+		\dfrac{1} {m} = \sigma^2_\theta
+	\end{equation}
+	Диффузионная модель:
+	\begin{equation}
+		\sigma^2_\theta = \dfrac {2}{Pe} - \dfrac{2 (1-e^{-Pe}  )} {Pe^2}
+	\end{equation}
+	
+	Алгоритм импульсного ввода индикатора:
+	\begin{itemize}
+		\item Проводится эксперимент методом импульсного ввода индикатора
+		\item Определяется кривая отклика
+		\item По кривой отклика находится функция распределения
+		\item Определяются параметры модели
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[h]
+		\includegraphics[width=9cm]{l4-cells2.png}
+	\end{figure}
+	\begin{equation}
+		V_i \dfrac { dC_i } { d \tau } = \dot {V} C_{i-1} + e C_{ i+1 } -(\dot{V} +e  ) C_i
+	\end{equation}
+
+	\begin{equation}
+		M_2^\theta=1+\dfrac { m(1-x)^2-2x(1-x^m) } { m^2 (1-x)^2 }
+	\end{equation}
+	где $M $ --- безразмерный центральный момент
+	
+	$f=\dfrac {e}{\dot{V}}$, 	$x=\dfrac {f} { 1+f }$
+	\begin{equation}
+	M_3^\theta=1+\dfrac {2} {m^2} + \dfrac{ 6x(1+3^m)+3m(1-x^2) } { m^2 (1-x)^2 } - \dfrac { 12(1+x)(1-x^m) } { m^3 (1-x^3) }
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+\frametitle{Комбинированные модели}
+	\begin{figure}[h]
+		\includegraphics[width=9cm]{l4-comb.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	Застойные зоны определяются из соотношения:
+	\begin{equation}
+		\bar{ \tau_U} = \dfrac{ \int \tau C(\tau) d \tau } { \int C(\tau) d \tau }  \neq \dfrac{V_{ap}} {\dot{V}} = \bar{\tau}
+	\end{equation}
+	\begin{equation}
+		\bar{\tau} = \dfrac{V_{ap}} {\dot{V}} = \dfrac {V_{short}} {\dot{ V}}+ \dfrac{V_{dead}} {\dot{V}} = \bar{\tau}_u + \dfrac{V_{dead}} {\dot{V}}
+	\end{equation}		
+	$V_{short}$, $V_{dead}$ --- объем проточной и застойной зон
+	$bar \tau_U < \dfrac {V_{ap}}  {\dot{V}}$
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Bypass}
+	\begin{figure}[h]
+		\includegraphics[width=9cm]{l4-bypass.png}
+	\end{figure}
+	Случай, когда индикатор не попадает в байпас:
+	\begin{equation}
+		\bar {\tau_U} = \dfrac { \int \tau C(\tau) d \tau }  { \int C(\tau) d \tau }  = \dfrac {V_{ap}} {\dot{V_2}}
+	\end{equation}	
+	
+	\begin{equation}
+		\bar{ \tau_U} = \dfrac {V_{ap}} { \left( 1- \dfrac {\dot{V_1}} {\dot V} \right) \dot V }
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+Доля байпассного потока:
+\begin{equation}
+	a=1- \dfrac { \bar \tau } { \bar \tau_U }
+\end{equation}
+	\begin{figure}[h]
+		\includegraphics[width=9cm]{l4-bypass2.png}
+	\end{figure}
+	\begin{figure}[h]
+		\includegraphics[width=5cm]{l4-rasp.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	Массы поступающие в байпасный поток и аппарат:
+	$m_1= \dot{V} \int_0^{\tau_1} C( \tau ) d\tau$
+	
+	
+	$m_2=\dot{V} \int_{\tau_1}^{\infty} C( \tau ) d\tau$
+	
+	
+	$m_1=\dfrac { (m_1+m_2) \dot V_1 } { \dot{V}} = (m_1+m_2) a$
+	
+	$m_2=\dfrac { (m_1+m_2) \dot V_2 } {\dot{V}} =(m_1+m_2)( 1-a )$
+\end{frame}
+
+\begin{frame}
+	\frametitle{Комбинированные потоки из параллельно соединенных зон }
+	\begin{figure}[h]
+		\includegraphics[width=8cm]{l4-comb2.png}
+	\end{figure}
+	
+	$\dot {V_1} C_1 + \dot {V_2} C_2 = \dot{V} C$
+	
+	$C=C_1 \dfrac { \dot{ V_1} } { \dot{V} } + C_2 \dfrac{ \dot {V_2} } { \dot{V} }$
+\end{frame}
+
+
+\begin{frame}
+	
+	\begin{figure}[h]
+		\includegraphics[width=8cm]{l4-rasp2.png}
+	\end{figure}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ориентировочные области применения различных моделей структуры потока в аппарате}
+	
+	\begin{tabular}{| p{2cm} | p{8cm} | }
+		\hline
+		МИВ & Трубчатые аппараты с большим соотношением длинны к диаметру  \\ \hline
+		МИС & Цилиндрические аппараты со сферическим дном в условиях интенсивного перемешивания, аппараты с отражательными перегородками, барботажные аппараты   \\ \hline
+		ЯМ & Каскады реакторов с мешалками, тарельчатые колонны, аппараты с псевдоожиженным слоем  \\ \hline
+		ЯМ с обратными потоками & Тарельчатые и секционированные насадочные аппараты, пульсационные аппараты \\ \hline
+		ДМ & Трубчатые аппараты, аппараты колонного типа с насадкой, и с осевым рассеиванием вещества \\ \hline
+	\end{tabular}
+\end{frame}

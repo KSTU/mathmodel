@@ -9,7 +9,16 @@ function z1(id)	%простейшие вычисления
 	"\\sin(4 e^2)"
 	"\\dfrac{\\sin(4)}{4}"
 	"\\cos(2 \\pi)"
-	"\\sin(4)+\\cos(5)"];
+	"\\sin(4)+\\cos(5)"
+	"\\dfrac{\\sin(2 \\pi)}{\\sqrt{\\pi}}"
+	"\\dfrac{7+1}{sin(\\pi)}"
+	"\\ln(\\3 \\sin(5))"
+	"\\sin(4+\\cos(5))"
+	"\\dfrac{\\sin(5\pi)}{5+\\pi}"
+	"\\dfrac{5}{10+\\ln(5)}"
+	"\\sin(10)+\\dfrac{1}{\\sin{10}}"
+	"\\sqrt{\\sin(10)+1}"
+	"\\dfrac{1+\\sin(15)}{15+\\sin(1)}"];
 	simp_num=rows(simple);
 	simp_rand1=round(rand()*(simp_num-1))+1;
 	simp_rand2=round(rand()*(simp_num-1))+1;
@@ -61,8 +70,11 @@ function z4(id)
 	"y(x)=\\dfrac{x+4}{x^2+1}"
 	"y(x)=x^3+4 \\sqrt{x}"
 	"y(x)=x"
-	"y(x)=\\sqrt{x}"
-	"y(x)=\\sin(x)+\\sqrt{x}"];
+	"y(x)=\\sqrt{x^2}"
+	"y(x)=\\sin(x)+\\sqrt{x}"
+	"y(x)=\\dfrac{x+3}{x^2+1}"
+	"y(x)=x^2-4x+2"
+	"y(x)=x+\\dfrac{x}{1+\\sin(x)}"];
 
 	func2=["z(x)=10-x^2"
 	"z(x)=\ln(x^2+1)"
@@ -170,6 +182,36 @@ function z7(id)
 	fprintf(id,"\\item Решить уравнение: $%s$\n\n",func1(f1_rand,:))
 endfunction
 
+function z8(id)
+	zrand=round(rand()*(4-1))+1;
+	fprintf(id,"\n\n\\item ");
+	if(zrand==1)
+		a=1+rand()*3.0;
+		b=30+rand()*300;
+		c=20+rand()*200;
+		fprintf(id,"Определить объем прямоугольного параллелепипеда, имеющего размеры: высота --- $%3.2f$ м, длина --- $%3.1f$ см, ширина --- $%3.1f$ см.\n\n",a,b,c);
+	endif
+	if(zrand==2)
+		m=50+rand()*50;
+		S=200+rand()*500;
+		fprintf(id,"Человек стоит на полу. Масса его $%3.1f$ кг. Площадь подошв $%4.1f$ $\\text{см}^2$. Какое давление оказывает человек на пол?\n\n",m,S);
+	endif
+	if(zrand==3)
+		G=0.1+rand()*1.0;
+		a=1+rand()*2;
+		b=200+rand()*500;
+#		fprintf(id,"33333")
+		fprintf(id,"Расход воды в трубе за секунду составляет $%3.2f$ $\\text{м}^3$. Найти скорость воды при ширине канала $%3.1f$ м и глубине воды $%3.1f$ см.\n\n",G,a,b);
+	endif
+	if(zrand==4)
+		a=1+rand()*3.0;
+		b=30+rand()*300;
+		c=20+rand()*200;
+		m=2+rand()*200;
+		fprintf(id,"Определить плотность прямоугольного параллелепипеда. Высота --- $%3.1f$ м, длина --- $%3.1f$ см, ширина --- $%3.1f$ см и масса $%3.1f$ кг.\n\n",a,b,c,m);
+	endif
+endfunction
+
 %main program
 arg_list=argv();
 if(length(arg_list)<2)
@@ -191,6 +233,7 @@ for ii=1:str2num(arg_list{2})
 	fprintf(file_id,"\\begin{enumerate}\n");
 	z1(file_id);
 	z2(file_id);
+	z8(file_id);
 	z4(file_id);
 	z7(file_id);
 	z5(file_id);

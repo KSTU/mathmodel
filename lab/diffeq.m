@@ -1,4 +1,4 @@
-# ww
+% ww
 printf("generate lab #3\n")
 
 function out=z1(id)
@@ -281,19 +281,19 @@ func_list=["\\upsilon=x^2",
 "\\upsilon=\\cos(\\tau)+\\sin(x)"
 ]
 vop=[" Определить координаты тела через "
-"Определить за какое время тело переместиться на "]
+"Определить за какое время тело переместиться на "];
 vop2=[" c.",
 " м."]
-f_num=rows(func_list)
-f_rand=round(rand()*(f_num-1))+1
+f_num=rows(func_list);
+f_rand=round(rand()*(f_num-1))+1;
 
-fprintf(id,"\\item ")
+fprintf(id,"\\item ");
 
-v0=0.1+5*rand()
-vof=300+700*rand()
-f2_rand=round(rand()*1.0)+1
+v0=0.1+5*rand();
+vof=300+700*rand();
+f2_rand=round(rand()*1.0)+1;
 
-fprintf(id,"Тело движется прямолинейно и его скорость изменяется по выражению $%s$. Начальная скорость равна $\\upsilon=%3.2f \\frac{\\text{м}}{\text{с}}.$ %s $%4.2f$ %s ",func_list(f_rand,:),v0,vop(f2_rand,:),vof,vop2(f2_rand,:))
+fprintf(id,"Тело движется прямолинейно и его скорость изменяется по выражению $%s$. Начальная скорость равна $\\upsilon=%3.2f \\frac{\\text{м}}{\text{с}}.$ %s $%4.2f$ %s ",func_list(f_rand,:),v0,vop(f2_rand,:),vof,vop2(f2_rand,:));
 endfunction
 
 
@@ -316,11 +316,19 @@ fprintf(file_id,"\\section{Лабораторная работа №~3 <<Реш�
 for ii=1:str2num(arg_list{2})
 	fprintf(file_id,"\\textsc{\\textbf{Вариант %d}}\n",ii)
 	fprintf(file_id,"\\begin{enumerate}\n");
-	z1(file_id);
-	z2(file_id);
-	z3(file_id);
-	z4(file_id);
-	z5(file_id);
+	if(arg_list{3}=="1")
+		z1(file_id);
+		z2(file_id);
+		z3(file_id);
+		z4(file_id);
+		z5(file_id);
+	endif
+	if(arg_list{3}=="2")
+		z1(file_id);
+		z2(file_id);
+		z3(file_id);
+		z6(file_id);
+	endif
 #	z6(file_id);
 	fprintf(file_id,"\\end{enumerate}\n");
 	#fprintf(file_id,"\\newpage\n")

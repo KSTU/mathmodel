@@ -1,0 +1,443 @@
+\lecture{Лекция 2}{lec2}
+	\section{Эмпирический метод построения математического описания (метод черного ящика)}
+	
+\begin{frame}
+	\frametitle{Область применения}
+	\begin{itemize}
+	\item Объект исследования малоизучен
+	\item Природа объекта исследования не известна
+	\item Действующий (функционирующий) объект
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Этапы составления  модели}
+	\begin{itemize}
+		\item Формирование цели, выбор факторов и переменных состояния, планирование эксперимента
+		\item Проведение экспериментов, изучение реакции объекта на различные возмущения
+		\item Статистическая обработка результатов
+		\item Проведение исследований на основе полученной модели
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Схема внешних связей}
+	\begin{tikzpicture}
+	[auto,
+	block/.style ={rectangle, draw=black, thick, fill=black!85, text width=8em, text centered, text=white, rounded corners, minimum height=10em},
+	line/.style ={draw, thick, -latex}]
+	
+	
+	
+	\node(in1){X 1};
+	\foreach\innum[count=\inlag] in {2,...,3}
+	\node(in\innum)[below=of in\inlag]{X \innum};
+	
+	\node(out1)[right=7cm of in1]{Y 1};
+	\foreach\outnum[count=\outlag] in {2,...,3}
+	\node(out\outnum)[below=of out\outlag]{Y \outnum};
+	
+	\node(ik1)[above right = 1cm and 1.3cm of in1]{U 1};
+	\foreach\outnum[count=\outlag] in {2,...,3}
+	\node(ik\outnum)[right=of ik\outlag]{U \outnum};
+	
+	\node(iz1)[below right = 1cm and 1.3cm of in3]{Z 1};
+	\foreach\outnum[count=\outlag] in {2,...,3}
+	\node(iz\outnum)[right=of iz\outlag]{Z \outnum};
+	
+	\node[block] (bb) at (current bounding box.center) {Черный
+		
+		 ящик};
+	
+	\begin{scope}[every path/.style=line]
+	\path (in1.east) -- ([yshift=3em]bb.west);
+	\path (in2.east) -- ([yshift=0em]bb.west);
+	\path (in3.east) -- ([yshift=-3em]bb.west);
+	%\path (in2.east) -- ([yshift=0em]bb.west);
+	%\path (in3.east) -- ([yshift=-1em]bb.west);
+	%\path (in5.east) -- ([yshift=-2em]bb.west);
+	%\path (in6.east) -- ([yshift=-3em]bb.west);
+	
+	\path ([yshift=3em]bb.east) -- (out1.west);
+	\path ([yshift=0em]bb.east) -- (out2.west);
+	\path ([yshift=-3em]bb.east) -- (out3.west);
+	%\path ([yshift=-1em]bb.east) -- (out4.west);
+	%\path ([yshift=-2em]bb.east) -- (out5.west);
+	%\path ([yshift=-3em]bb.east) -- (out6.west);
+	
+	\path (ik1.south) -- ([xshift=-3em]bb.north);
+	\path (ik2.south) -- ([xshift=0em]bb.north);
+	\path (ik3.south) -- ([xshift=3em]bb.north);
+	
+	\path (iz1.north) -- ([xshift=-3em]bb.south);
+	\path (iz2.north) -- ([xshift=0em]bb.south);
+	\path (iz3.north) -- ([xshift=3em]bb.south);
+	
+	\end{scope}
+	
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+	$X$ --- факторы, которые можно контролировать и регулировать
+	
+
+	$U$ --- факторы, которые можно контролировать, но нельзя регулировать
+	
+	$Z$ --- факторы, которые нельзя контролировать и регулировать
+	
+	$Y$ --- выходные факторы, переменные состояния, функции отклика.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Переменные состояния}
+	Экономические:
+	\begin{itemize}
+		\item Производительность
+		\item Себестоимость
+	\end{itemize}
+	Технологические:
+	\begin{itemize}
+		\item Качество продукта
+		\item Выход целевого продукта
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Требования при выборе переменной состояния}
+
+	\begin{itemize}
+		\item Должна иметь количественную характеристику
+		\item Должна однозначно измерять эффективность объекта
+		\item Должна быть статистически эффективной (обладать меньшей дисперсией)
+		\item Должны иметь области определения заданное технологическими и принципиальными ограничениями
+		\item Между факторами и переменными состояния должно существовать однозначное соответствие
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Уравнение математического описания}
+	\begin{equation}
+		\bar{Y}=F(U,X,Z)
+	\end{equation}
+	где $\bar{Y}=\dfrac{1}{n} \sum_{i=1}^n Y_1$, $n$ --- количество параллельных опытов
+	\begin{equation}
+	\bar{Y}=F(U,X)+f(Z)
+	\end{equation}
+	где $f()$ --- шум от внешних факторов
+	\begin{equation}
+	\bar{Y}=F(A,X)
+	\end{equation}
+	где $A=[a_1,a_2,a_3...a_m]$, $m$ --- количество параметров модели, $X=[x_1,x_2,x_3,..., x_k]$, k ---  количество входящих параметров
+\end{frame}
+\begin{frame}
+	\frametitle{Функции линейные по параметрам}
+	Линейные:
+	\begin{equation}
+	\bar{Y}=\sum_{i=1}^m a_i \phi_i(x)
+	\end{equation}
+	$\bar{Y}=a_1 +a_2 x$; $\bar{Y}=a_1 +a_2 \sin(\sqrt{x})$
+	
+	Нелинейные:
+	\begin{equation}
+	\bar{Y}=\sum_{i=1}^m \phi_i( a_i x)
+	\end{equation}
+	$\bar{Y}=a_1 +\sin(a_2 \sqrt{x})$; $\bar{Y}=\sin(a_1\sqrt{a_2 x})$;
+	$\bar{Y}=\exp(a_1+a_2 x)$
+\end{frame}
+
+\begin{frame}
+	\frametitle{Планирование и проведение эксперимента}
+	\textbf{Пассивный эксперимент} проводится сбор и анализ информации об объекте без специального изменения входных параметров
+	\begin{itemize}
+		\item Отсутствуют затраты не эксперимент
+		\item Небольшие колебания сходных характеристик
+		\item Необходимо большое количество экспериментальных данных
+	\end{itemize}
+	
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Планирование эксперимента. Активный эксперимент}
+	\textbf{Активный эксперимент} состоит в целенаправленном изменении входных параметров технологического процесса
+	\begin{itemize}
+		\item Наглядность
+		\item Простота интерпретации результатов
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Определение реакции на стандартные возмущения}
+	При определении реакции на стандартные возмущения на вход подается какой-либо стандартный сигнал
+	
+	\includegraphics[width=0.9\textwidth]{l2_inp.png}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Статистическая обработка результатов}
+	\begin{tabular}{ |p{1.2cm}|c|c|c|c|c|p{1.8cm}|p{1.7cm}| }
+		\hline
+		Номер серии опытов & \multicolumn{5}{ p{3cm}| }{Результаты параллельных 			 измерений} &Среднее значение & Дисперсия \\ \hline
+		1 & $Y_{11}$ & $Y_{12}$ & $Y_{13}$ & $...$ & $Y_{1n}$ & $\bar{Y_1}$ & $\sigma_1^2$\\
+		2 & $Y_{21}$ & $Y_{22}$ & $Y_{23}$ & $...$ & $Y_{2n}$ & $\bar{Y_2}$ & $\sigma_2^2$\\
+		3 & $Y_{31}$ & $Y_{32}$ & $Y_{33}$ & $...$ & $Y_{3n}$ & $\bar{Y_3}$ & $\sigma_3^2$\\
+		4 & $Y_{41}$ & $Y_{42}$ & $Y_{43}$ & $...$ & $Y_{4n}$ & $\bar{Y_4}$ & $\sigma_4^2$\\
+		$...$ &   &   &   &   &   &   &  \\
+		$m$ & $Y_{m1}$ & $Y_{m2}$ & $Y_{m3}$ & $...$ & $Y_{mn}$ & $\bar{Y_m}$ & $\sigma_m^2$\\ \hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Оценка воспроизводимости}
+	Определяется среднее арифметическое:
+	\begin{equation}
+		\bar{Y_i}=\dfrac{1}{m} \sum_{j=1}^{m}Y_{ij}
+	\end{equation}
+	Определяется дисперсия каждой величины:
+	\begin{equation}
+		\sigma_i^2=\dfrac{1}{n-1}\sum_{j=1}^{m} (Y_{ij} - \bar{Y_i})^2
+	\end{equation}
+	Определяется значение критерия Кохрена:
+	\begin{equation}
+		G=\dfrac{max(\sigma_i^2)}{\sum_{j=1}^{m}\sigma_i^2}
+	\end{equation}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Структурно-регрессионный анализ}
+	Корреляция (от лат. correlatio «соотношение, взаимосвязь») или корреляционная зависимость --- это статистическая взаимосвязь двух или более случайных величин (либо величин, которые можно с некоторой допустимой степенью точности считать таковыми). При этом изменения значений одной или нескольких из этих величин сопутствуют систематическому изменению значений другой или других величин.
+\end{frame}
+
+\begin{frame}
+	Ковариационный момент:
+	\begin{equation}
+		K_{xy}=\overline{(x-\overline{x})(y-\overline{y})}
+	\end{equation}
+	Коэффициент корреляции:
+	\begin{equation}
+		r_{xy}=\dfrac{K_{xy}}{\sigma_x \sigma_y}
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Коэффициент корреляции}
+	\begin{figure}
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{l2-corr1.pdf} % first figure itself
+			%\caption{Оригинал}
+		\end{minipage}\hfill
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=0.9\textwidth]{l2-corr2.pdf} % second figure itself
+			%\caption{Модель}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Коэффициент корреляции}
+		\begin{figure}
+			\centering
+			\begin{minipage}{0.45\textwidth}
+				\centering
+				\includegraphics[width=0.9\textwidth]{l2-corr3.pdf} % first figure itself
+				%\caption{Оригинал}
+			\end{minipage}\hfill
+			\begin{minipage}{0.45\textwidth}
+				\centering
+				\includegraphics[width=0.9\textwidth]{l2-corr4.pdf} % second figure itself
+				%\caption{Модель}
+			\end{minipage}
+		\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Коэффициент корреляции}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.9\textwidth]{l2-corr5.pdf} % first figure 
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Коэффициент корреляции}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\textwidth]{600px-Correlationexamples.png} % first figure 
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Расчет коэффициентов регрессии}
+	Метод наименьших квадратов:
+	\begin{equation}
+		F=\sum_{i=1}^{m} (y_i^э- y_i^р)^2 \rightarrow min
+	\end{equation}
+	
+	\begin{equation}
+	\left\lbrace 
+	\begin{gathered} 
+	\dfrac{\partial F}{\partial a_1}=0 \\
+	\dfrac{\partial F}{\partial a_2}=0 \\
+	...\\
+	\dfrac{\partial F}{\partial a_N}=0 \\
+	\end{gathered} 
+	\right.
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Расчет коэффициентов регрессии}
+	\begin{equation}
+		\dfrac{\partial F}{\partial a_k} = \dfrac{\sum_{i=1}^{m} \left(
+			y_i^э -\sum_{j=1}^{N} a_j \phi_i(x_i)
+			 \right)^2}{\partial a_k} = 0
+	\end{equation}
+	Дифференцируя:
+	\begin{equation}
+		2 \sum_{i=1}^{m} \left(
+		y_i^э -\sum_{j=1}^{N} a_j \phi_i(x_i)
+		\right) \phi_k(x_i)=0
+	\end{equation}
+	Перегруппировка членов
+	\begin{equation}\label{eq:l2eq}
+		\sum_{j=1}^{N} a_j \sum_{i=1}^{m}\phi_j(x_i)\phi_k(x_i)=\sum_{i=1}^{m} y_i^э \phi_k(x_i)
+	\end{equation}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Расчет коэффициентов регрессии}
+	Матрица входных переменных:
+	\begin{equation}
+	\Phi = \begin{bmatrix}
+	\phi_1(x_1) & \phi_2(x_1) & \phi_3(x_1) & \dots  & \phi_N(x_1) \\
+	\phi_1(x_2) & \phi_2(x_2) & \phi_3(x_2) & \dots  & \phi_N(x_2) \\
+	\vdots & \vdots & \vdots & \ddots & \vdots \\
+	\phi_1(x_m) & \phi_2(x_m) & \phi_3(x_m) & \dots  & \phi_N(x_m) \\
+	\end{bmatrix}
+	\end{equation}
+	Информационная матрица:
+	\begin{equation}
+	I_{jk} = \sum_{i=1}^{m} \phi_j (x_i) \phi_k (x_i)
+	\end{equation}
+	\begin{equation}
+	I = \Phi^T \Phi
+	\end{equation}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Расчет коэффициентов регрессии}
+	Матрица параметров:
+	\begin{equation}
+	A = \begin{bmatrix}
+	a_1  \\
+	a_2 \\
+	a_3
+	\vdots \\
+	a_N \\
+	\end{bmatrix}
+	\end{equation}
+	Матрица экспериментальны значений:
+	\begin{equation}
+	Y^э = \begin{bmatrix}
+	y^э_1  \\
+	y^э_2 \\
+	y^э_3
+	\vdots \\
+	y^э_N \\
+	\end{bmatrix}
+	\end{equation}
+	
+	\begin{equation}
+		B=\Phi^T Y^э
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Расчет коэффициентов регрессии}
+	Тогда искомую систему уравнений \ref{eq:l2eq} можно представить в виде:
+	\begin{equation}
+		I A = B
+	\end{equation}
+	Вектор значений параметров определяется согласно уравнению:
+	\begin{equation}
+		A =I^{-1} B = (\Phi^T \Phi)^{-1} \Phi Y^э
+	\end{equation}
+	Оценка значимости критериев:
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Проверка на адекватность}
+	Дисперсия адекватности:
+	\begin{equation}
+		S_{ад}^2= \dfrac{1}{m-B}\sum_{i=1}{m}(y_i^э-y_i^р)^2
+	\end{equation}
+	где $B$ --- число значимых коэффициентов регрессии.
+	Критерий Фишера:
+	\begin{equation}
+		F=\dfrac{max(S_{ад}^2, \sigma^2)}{min(S_{ад}^2, \sigma^2)}
+	\end{equation}
+	Оценка значимости критериев:
+	\begin{equation}
+		t_i=\dfrac{|a_i|}{\sigma_a}
+	\end{equation}
+	где  $\sigma_a =\sqrt{\sum_{j=1}^{m} \dfrac{\partial a_i}{\partial y{i}} \sigma^2}$
+\end{frame}
+
+\begin{frame}
+\frametitle{Схема построения математической модели}
+\begin{tikzpicture}[node distance=1.5cm,
+every node/.style={fill=white, font=\sffamily}, align=center]
+% Specification of nodes (position, etc.)
+\node (exp)     [process]          {Эксперимент};
+\node (str)      [process, below of=exp]   {Структурная идентифакация};
+\node (param)      [process, below of=str]   {Параметрическая идентификация};
+\node (zn)      [process, below of=param]   {Проверка значимости параметров};
+\node (ad)      [process, below of=zn]   {Проверка адекватности описания};
+\node (pr)      [process, below of=ad]   {Применение модели};
+
+\draw[->]             (exp) -- (str);
+\draw[->]             (str) -- (param);
+\draw[->]             (param) -- (zn);
+\draw[->]             (zn) -- (ad);
+\draw[->]             (ad) -- (pr);
+%\draw[->]             (results) -- (comp);
+%\draw[->]             (comp) -- (think);
+%\draw[->]             (comp) -- (math);
+\draw[->] (ad.west) -- ++(-1.5,0) -- ++(0,4.5) -- (str.west);
+\draw[->] (zn.east) -- ++(1.5,0) -- ++(0,3.0) -- (str.east);
+%\draw[->] (comp.south) -- ++(0,-1) -- ++(-8.5,0) -- ++(0,2) -- ++(0,2.5) -- (think.west);
+%\draw[->] (comp.east) -- ++(2,0) node[xshift=-1cm,yshift=0.4cm]{хорошее} -- ++(0,5.8) -- ++(-8,0) %node[xshift=3.1cm,yshift=0.4cm]{управление, оптимизация, контроль} -- (object.north);
+
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Достоинства и недостатки}
+	Достоинства:
+	\begin{itemize}
+		\item Простота описания
+		\item Доступность получения моделей
+		\item Возможность изучения при отсутствии теории
+	\end{itemize}
+	Недостатки:
+	\begin{itemize}
+		\item Слабые возможности экстраполяции
+		\item Необходимость большого количества экспериментов
+		\item Отсутствие физического смысла у параметров
+		\item Непереносимость на другой аппарат
+	\end{itemize}
+\end{frame}

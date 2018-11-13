@@ -23,7 +23,7 @@ octave regression.m $1 $2
 cd results
 rm diffeq.tex
 cd ..
-octave diffeq.m $1 $2
+octave diffeq.m $1 $2 1
 
 #programm lab
 cd results
@@ -37,14 +37,27 @@ rm phase_ideal.tex
 cd ..
 octave phase_ideal.m $1 $2
 
+#equation of state 6
+
+#absorbtion 7
+
+#heat traspher 8
+cd results
+rm heat.tex
+cd ..
+octave heat.m $1 $2
+
+
 #reaction lab
 cd results
 rm reactions.tex
 cd ..
 octave reactions.m $1 $2
 
+#rectification
 
 
 #get pdf
 cd results
+pdflatex main.tex
 pdflatex main.tex
