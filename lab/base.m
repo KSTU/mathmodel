@@ -12,7 +12,7 @@ function z1(id)	%простейшие вычисления
 	"\\sin(4)+\\cos(5)"
 	"\\dfrac{\\sin(2 \\pi)}{\\sqrt{\\pi}}"
 	"\\dfrac{7+1}{sin(\\pi)}"
-	"\\ln(\\3 \\sin(5))"
+	"\\ln(3 \\sin(5))"
 	"\\sin(4+\\cos(5))"
 	"\\dfrac{\\sin(5\pi)}{5+\\pi}"
 	"\\dfrac{5}{10+\\ln(5)}"
@@ -151,7 +151,7 @@ function z6(id)
 
 	func2=["x^2+y^2=2"
 	"\ln(x^2+y)=2"
-	"\\dfrac{x^3+10}{x^2+1}"
+	"\\dfrac{x^3+10}{x^2+1} = 1"
 	"x^2 + y^3=1"
 	"5x +3y=10"
 	"x=7y"
@@ -233,10 +233,10 @@ for ii=1:str2num(arg_list{2})
 	fprintf(file_id,"\\begin{enumerate}\n");
 	z1(file_id);
 	z2(file_id);
-	z8(file_id);
+	#z8(file_id);
 	z4(file_id);
 	z7(file_id);
-	z5(file_id);
+	#z5(file_id);
 	z6(file_id);
 	fprintf(file_id,"\\end{enumerate}\n");
 endfor

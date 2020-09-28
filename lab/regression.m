@@ -318,9 +318,9 @@ for ii=1:str2num(arg_list{2})
 #	z2(file_id)
 #	z3(file_id)
 	cd ..
-	z4(file_id,prop,temp_min,temp_max,units,vvo)
+#	z4(file_id,prop,temp_min,temp_max,units,vvo)
 	cd results
-	z5(file_id)
+#	z5(file_id)
 	printf("generated %d\n",ii);
 #	fprintf(file_id,"\\end{enumerate}\n");
 

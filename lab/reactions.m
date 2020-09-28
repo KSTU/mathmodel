@@ -6,7 +6,7 @@ function z1(id)
 		"\\begin{equation*} \\begin{aligned} A \\xleftrightarrow[k_2]{k_1} C + \\Delta H_1 \\\\ A \\xrightarrow{k_3} B + \\Delta H_2 \\end{aligned} \\end{equation*}",
 		"\\begin{equation*} \\begin{aligned} A \\xleftrightarrow[k_2]{k_1} B + \\Delta H_1 \\\\ B \\xrightarrow{k_3} C + \\Delta H_2 \\end{aligned} \\end{equation*}",
 		"\\begin{equation*} \\begin{aligned} A+B \\xleftrightarrow[k_2]{k_1} C + \\Delta H_1 \\\\ B + C \\xrightarrow{k_3} D + \\Delta H_2 \\end{aligned} \\end{equation*}",
-		"\\begin{equation*} \\begin{aligned} A \\xleftrightarrow{k_1} B + \\Delta H_1 \\\\ A \\xrightarrow{k_2} C + \\Delta H_2 \\\\ A \\xleftrightarrow{k_3} D + \\Delta H_3 \\end{aligned} \\end{equation*}"
+		"\\begin{equation*} \\begin{aligned} A \\xrightarrow{k_1} B + \\Delta H_1 \\\\ A \\xrightarrow{k_2} C + \\Delta H_2 \\\\ A \\xrightarrow{k_3} D + \\Delta H_3 \\end{aligned} \\end{equation*}"
 		"\\begin{equation*} \\begin{aligned} A \\xleftrightarrow[k_2]{k_1} B + C + \\Delta H_1 \\\\ B + C \\xrightarrow{k_3} D + \\Delta H_2 \\end{aligned} \\end{equation*}"];
 	nreak=5;	%заменить на функцию
 	dh=[2 2 2 2 3 2 ];	%
@@ -45,7 +45,12 @@ function z1(id)
 	else
 		fprintf(id," тепловой эффект $\\Delta H_1= %4.1f \\frac{кДж}{моль}$, $\\Delta H_2=%4.1f \\frac{кДж}{моль}$, $\\Delta H_3 = %4.1f \\frac{кДж}{моль}$",dh1,dh2,dh3);
 	endif
-	fprintf(id,"\\begin{itemize} \\item Составить математическую модель изотермического реактора. Определить распределение концентрации компонентов по времени. Определить изменение конверсии по компоненту A, селективности и выхода по компоненту B. \\item  Составить математическую модель адиабатического реактора, определить изменение концентрации и температуры во времени. Сравнить изменение концентрации компонентов, конверсии и селективности для адиабатического и изотермического реактора от времени. \\item  Составить математическую модель реактора идеального смешения. Сравнить изменение во времени конверсии и селективности для модели идеального вытеснения и смешения. \\end{itemize}\n\n");
+	fprintf(id,"\\begin{itemize} \\item Составить математическую модель изотермического реактора. Определить распределение концентрации компонентов по времени. Определить изменение конверсии по компоненту A, селективности и выхода по компоненту B. ");
+	
+#	fprintf(id,"\\item  Составить математическую модель адиабатического реактора, определить изменение концентрации и температуры во времени. Сравнить изменение концентрации компонентов, конверсии и селективности для адиабатического и изотермического реактора от времени. ");
+#	fprintf(id, "\\item  Составить математическую модель реактора идеального смешения. Сравнить изменение во времени конверсии и селективности для модели идеального вытеснения и смешения. ");
+	
+	fprintf(id,"\\end{itemize}\n\n");
 	printf("|_")
 
 endfunction
