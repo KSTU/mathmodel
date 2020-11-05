@@ -332,3 +332,7 @@ fclose(file_id);
 file_id=fopen("filelist.tex","a");
 fprintf(file_id,"\n\\input{regression.tex}");
 fclose(file_id);
+
+file_id=fopen("number.tex","w")
+fprintf(file_id,"%s",arg_list{1})
+fclose(file_id)
