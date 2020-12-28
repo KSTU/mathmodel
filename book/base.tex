@@ -6,10 +6,10 @@
 % Исходная версия шаблона --- 
 % https://www.writelatex.com/coursera/latex/3.1
 
-\documentclass[a5paper,11pt]{report}
+\documentclass[a5paper,11pt]{report}	%draft
 %\usepackage[print,twouparticle]{booklet}
 %\usepackage{lscape}
-\usepackage[left=1.5cm, top=1cm, right=1cm, bottom=20mm]{geometry}
+\usepackage[left=1.5cm, top=1.5cm, right=1.5cm, bottom=20mm]{geometry}
 
 
 %%% Работа с русским языком
@@ -98,7 +98,7 @@
 	}
 \newcommand{\resh}{Вариант решения: }
 
-\newcommand{\laborator} [1] {\newpage\addtocounter{nlab}{1}\addcontentsline{toc}{section}{Лабораторная работа №\arabic{nlab} #1}  \textbf{Лабораторная работа № \arabic{nlab} #1}
+\newcommand{\laborator} [1] {\newpage\addtocounter{nlab}{1}\addcontentsline{toc}{section}{Лабораторная работа №\arabic{nlab} #1}  {\textbf{Лабораторная работа № \arabic{nlab} #1}}
 \setcounter{equation}{0}
 \setcounter{figure}{0}
 \setcounter{primer.count}{0}
@@ -159,6 +159,7 @@
 \input{rectification.tex}
 
 \newpage
+\renewcommand{\bibname}{\large{Библиографический список}}
 \addcontentsline{toc}{section}{\bibname}
 \bibliographystyle{utf8gost71u}  
 \bibliography{lib.bib}

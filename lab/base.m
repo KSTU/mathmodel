@@ -233,10 +233,10 @@ for ii=1:str2num(arg_list{2})
 	fprintf(file_id,"\\begin{enumerate}\n");
 	z1(file_id);
 	z2(file_id);
-	#z8(file_id);
+	z8(file_id);
 	z4(file_id);
 	z7(file_id);
-	#z5(file_id);
+	z5(file_id);
 	z6(file_id);
 	fprintf(file_id,"\\end{enumerate}\n");
 endfor
