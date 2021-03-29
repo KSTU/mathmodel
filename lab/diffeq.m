@@ -346,6 +346,12 @@ for ii=1:str2num(arg_list{2})
 		z3(file_id);
 		z6(file_id);
 	endif
+	if( strcmp (arg_list{3}, "ZAO"))
+		z1(file_id);
+		z2(file_id);
+		z3(file_id);
+#		z6(file_id);
+	endif
 #	z6(file_id);
 	fprintf(file_id,"\\end{enumerate}\n");
 	#fprintf(file_id,"\\newpage\n")

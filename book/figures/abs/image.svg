@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="11.730cm" height="16.600cm" viewBox="14.500 4.450 11.730 16.600"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Layer: Background -->
+<g id="Background">
+<!-- Standard - Box -->
+<rect x="16.500" y="7.000" width="7.500" height="12.000" fill="none" stroke="#000000" stroke-width="0.100"  rx="0.000" />
+<!-- Standard - Line -->
+<line x1="18.000" y1="4.500" x2="18.000" y2="6.513" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="18.000,6.888 17.750,6.388 18.000,6.513 18.250,6.388 "/>
+<!-- Standard - Line -->
+<line x1="22.500" y1="4.987" x2="22.500" y2="7.000" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="22.500,4.612 22.750,5.112 22.500,4.987 22.250,5.112 "/>
+<!-- Standard - Line -->
+<line x1="18.000" y1="19.000" x2="18.000" y2="20.513" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="18.000,20.888 17.750,20.388 18.000,20.513 18.250,20.388 "/>
+<!-- Standard - Line -->
+<line x1="22.400" y1="19.487" x2="22.400" y2="21.000" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="#000000" stroke-width="0.100"  points="22.400,19.112 22.650,19.612 22.400,19.487 22.150,19.612 "/>
+<!-- Standard - Text -->
+<text x="15.500" y="6.000"  fill="#000000" text-anchor="start" font-size="1.06" font-family="Arial" font-style="normal" font-weight="400">
+L, x</text>
+<!-- Standard - Text -->
+<text x="23.500" y="6.000"  fill="#000000" text-anchor="start" font-size="1.06" font-family="Arial" font-style="normal" font-weight="400">
+G, y</text>
+<!-- Standard - Text -->
+<text x="14.677" y="20.076"  fill="#000000" text-anchor="start" font-size="1.06" font-family="Arial" font-style="normal" font-weight="400">
+L, x+dx</text>
+<!-- Standard - Text -->
+<!-- Standard - Text -->
+<!-- Standard - Text -->
+<text x="23.293" y="20.146"  fill="#000000" text-anchor="start" font-size="1.06" font-family="Arial" font-style="normal" font-weight="400">
+G, y+dy</text>
+<!-- Standard - Line -->
+<line x1="16.500" y1="14.700" x2="24.000" y2="14.700" stroke="#000000" stroke-width="0.100" />
+<!-- Standard - Line -->
+<line x1="16.500" y1="12.000" x2="24.000" y2="12.000" stroke="#000000" stroke-width="0.100" />
+<!-- Standard - Line -->
+<line x1="24.000" y1="12.000" x2="21.500" y2="14.700" stroke="#000000" stroke-width="0.100" />
+<!-- Standard - Line -->
+<line x1="22.500" y1="12.000" x2="20.000" y2="14.700" stroke="#000000" stroke-width="0.100" />
+<!-- Standard - Line -->
+<line x1="21.000" y1="12.000" x2="18.500" y2="14.700" stroke="#000000" stroke-width="0.100" />
+<!-- Standard - Line -->
+<line x1="19.500" y1="12.000" x2="17.000" y2="14.700" stroke="#000000" stroke-width="0.100" />
+<!-- Standard - Line -->
+<line x1="18.000" y1="12.000" x2="16.500" y2="13.500" stroke="#000000" stroke-width="0.100" />
+<!-- Standard - Line -->
+<line x1="24.000" y1="13.600" x2="23.000" y2="14.700" stroke="#000000" stroke-width="0.100" />
+<!-- Standard - Text -->
+<text x="14.500" y="13.500"  fill="#000000" text-anchor="start" font-size="1.06" font-family="Arial" font-style="normal" font-weight="400">
+dz</text>
+<!-- Standard - Text -->
+<!-- Standard - Text -->
+</g>
+</svg>
